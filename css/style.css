@@ -10,18 +10,58 @@ body {
    padding: 0;
    place-items: center;
 }
+#resumewrapper{
+   border: 1px solid rgb(151, 151, 151);
+}
+
 header {
-   border: 1px solid black;
+   border: 0px solid black;
    width: 800px;
 }
 #main {
    flex-grow: 1;           /* Grow to fill available space */
    display: flex;
    background: #e8e8e8;
-   border: 1px solid black;
+   border: 0px solid black;
    width: 800px;
 }
 #content_wrapper {
    background: yellow;
    flex-grow: 1;
 }
+#header div{
+   float: left;
+}
+
+#header #hboxcontent{
+   width: 50px;
+   height: 150px;
+}
+
+#header #hboxcontent #hbox{
+   width: 30px;
+   height: 50px;
+   background-color: rgb(18, 18, 83);
+   display: block;
+   margin: 20px 0 0 0;
+}
+
+#header #hcontent{
+   width: 750px;
+   height: 150px;
+}
+
+#header #hcontent div{
+   float: left;
+   border: 1px solid black;
+   width: 255px;
+   height: 150px;
+}
+
+#header #hcontent #hcontent_right{
+   float: right;
+   border: 1px solid black;
+   width: 230px;
+   height: 150px;
+}
+
