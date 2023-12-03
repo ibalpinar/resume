@@ -1,0 +1,23 @@
+html {
+   height: 100%;           /* Fill all the window */
+}
+
+body {
+   min-height: 100%;       /* At least fill all <html> */
+   display: flex;          /* Magic begins */
+   flex-direction: column; /* Column layout */
+   margin: 0;
+   padding: 0;
+   place-items: center;
+}
+#main {
+   flex-grow: 1;           /* Grow to fill available space */
+   display: flex;
+   background: #e8e8e8;
+   border: 1px solid black;
+   width: 1000px;
+}
+#content_wrapper {
+   background: yellow;
+   flex-grow: 1;
+}
