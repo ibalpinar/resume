@@ -10,12 +10,16 @@ body {
    padding: 0;
    place-items: center;
 }
+header {
+   border: 1px solid black;
+   width: 800px;
+}
 #main {
    flex-grow: 1;           /* Grow to fill available space */
    display: flex;
    background: #e8e8e8;
    border: 1px solid black;
-   width: 1000px;
+   width: 800px;
 }
 #content_wrapper {
    background: yellow;
