@@ -10,9 +10,10 @@ body {
    padding: 0;
    place-items: center;
    background-color: rgb(233, 233, 233);
+   font: 15px Verdana;
 }
 #resumewrapper{
-   border: 1px solid rgb(151, 151, 151);
+   border: 0px solid rgb(151, 151, 151);
    background-color: rgb(255, 255, 255);
 }
 
@@ -45,21 +46,50 @@ header {
    height: 50px;
    background-color: rgb(18, 18, 83);
    display: block;
-   margin: 20px 0 0 0;
+   margin: 30px 0 0 0;
 }
 
 #header #hcontent{
+   display: flex;
+   flex-direction: row;
    width: 750px;
    height: 150px;
+   margin-bottom: 30px;
 }
 
 #header #hcontent .hcontent_column{
    float: left;
-   border: 1px solid black;
-   width: 255px;
+   border: 0px solid black;
    height: 150px;
 }
 
 #header #hcontent #hcontent_left{
    float: none;
+   display: flex;
+   flex-direction: column;
+   border: none;
+   width: 280px;
+}
+
+#header #hcontent #hcontent_left #full_name{
+   font-size: 30px;
+   margin-top: 25px;
+}
+#header #hcontent #hcontent_left #title{
+   font-size: 15px;
+   color: red;
+   margin-top: 1px;
+}
+#header #hcontent #hcontent_left #objective{
+   font-size: 12px;
+   margin-top: 10px;
+}
+
+#header #hcontent #hcontent_middle{
+   float: none;
+   width: 150px;
+}
+#header #hcontent #hcontent_right{
+   float: none;
+   width: 250px;
 }
