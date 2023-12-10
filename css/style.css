@@ -52,14 +52,13 @@ header {
 #header #hcontent{
    display: flex;
    flex-direction: row;
-   width: 750px;
+   width: 748px;
    height: 150px;
    margin-bottom: 30px;
 }
 
 #header #hcontent .hcontent_column{
    float: left;
-   border: 0px solid black;
    height: 150px;
 }
 
@@ -67,7 +66,6 @@ header {
    float: none;
    display: flex;
    flex-direction: column;
-   border: none;
    width: 280px;
 }
 
@@ -87,9 +85,39 @@ header {
 
 #header #hcontent #hcontent_middle{
    float: none;
-   width: 150px;
+   width: 180px;
 }
+
+#header #hcontent #hcontent_middle .photo_container{
+   display: inline-block;
+   justify-content: center;
+   text-align: center;
+   position: relative;
+   top:0;
+   right:0;
+   width: 180px;
+   margin-top: 15px;
+}
+
+#header #hcontent #hcontent_middle .photo_container .photo_container__frame {
+   display: inline-block;
+   flex: 1 0 auto;
+   z-index: 10;
+   position: absolute;
+   top:0;
+   right:0;
+}
+
+#header #hcontent #hcontent_middle .photo_container .photo_container__photo {
+   display: inline-block;
+   align-self: center;
+   z-index: 5;
+   position: absolute;
+   top:0;
+   right:0;
+}
+
 #header #hcontent #hcontent_right{
    float: none;
-   width: 250px;
+   width: 290px;
 }
