@@ -53,13 +53,12 @@ header {
    display: flex;
    flex-direction: row;
    width: 748px;
-   height: 150px;
    margin-bottom: 30px;
 }
 
 #header #hcontent .hcontent_column{
    float: left;
-   height: 150px;
+   height: 170px;
 }
 
 #header #hcontent #hcontent_left{
@@ -120,4 +119,16 @@ header {
 #header #hcontent #hcontent_right{
    float: none;
    width: 290px;
+   display: flex;
+   flex-direction: column;
 }
+
+#header #hcontent #hcontent_right .contact_info{
+   text-align: right;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid;
+   font-size: 13px;
+   margin-top: 5px;
+}
+
