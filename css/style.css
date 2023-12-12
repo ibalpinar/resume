@@ -124,11 +124,28 @@ header {
 }
 
 #header #hcontent #hcontent_right .contact_info{
+   float: left;
    text-align: right;
    display: flex;
    flex-direction: column;
    border: 1px solid;
    font-size: 13px;
    margin-top: 5px;
+   width: 240px;
 }
 
+#header #hcontent #hcontent_right .contact_icon{
+   float: right;
+   text-align: right;
+   display: flex;
+   flex-direction: column;
+   border: 1px solid;
+   font-size: 13px;
+   margin-top: 5px;
+   width: 40px;
+}
+
+#header #hcontent #hcontent_right .contact_icon > img {
+   height: 40px;
+   height: 40px;
+ }
