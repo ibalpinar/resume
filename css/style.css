@@ -132,6 +132,7 @@ header {
    font-size: 13px;
    margin-top: 5px;
    width: 240px;
+   height: 30px;
 }
 
 #header #hcontent #hcontent_right .contact_icon{
@@ -143,9 +144,10 @@ header {
    font-size: 13px;
    margin-top: 5px;
    width: 40px;
+   height: 30px;
 }
 
 #header #hcontent #hcontent_right .contact_icon > img {
-   height: 40px;
-   height: 40px;
+   height: 100%;
+   width: auto;
  }
