@@ -25,7 +25,7 @@ header {
    flex-grow: 1;           /* Grow to fill available space */
    display: flex;
    background: #e8e8e8;
-   border: 0px solid black;
+   border-top: 2px solid black;
    width: 800px;
 }
 #content_wrapper {
@@ -53,7 +53,7 @@ header {
    display: flex;
    flex-direction: row;
    width: 748px;
-   margin-bottom: 30px;
+   margin-bottom: 0px;
 }
 
 #header #hcontent .hcontent_column{
@@ -121,33 +121,48 @@ header {
    width: 290px;
    display: flex;
    flex-direction: column;
+   padding-top: 15px;
+}
+#header #hcontent #hcontent_right .contact_container{
+   margin-top: 8px;
 }
 
-#header #hcontent #hcontent_right .contact_info{
+#header #hcontent #hcontent_right .contact_container .contact_info{
    float: left;
    text-align: right;
-   display: flex;
-   flex-direction: column;
-   border: 1px solid;
-   font-size: 13px;
-   margin-top: 5px;
-   width: 240px;
+   border: 0px solid;
+   font-size: 12px;
+   width: 235px;
    height: 30px;
+   vertical-align: middle;
+   border: 0px dotted;
 }
 
-#header #hcontent #hcontent_right .contact_icon{
+#header #hcontent #hcontent_right .contact_container .contact_icon{
    float: right;
-   text-align: right;
-   display: flex;
-   flex-direction: column;
-   border: 1px solid;
+   border: 0px solid;
    font-size: 13px;
-   margin-top: 5px;
-   width: 40px;
+   width: 25px;
    height: 30px;
+   vertical-align: middle;
+   text-align: center;
+   border: 0px dotted;
+   margin-right: 20px;
 }
 
-#header #hcontent #hcontent_right .contact_icon > img {
-   height: 100%;
-   width: auto;
- }
+#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_email {
+   width: 17px;
+}
+#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_mobile {
+   width: 12px;
+}
+#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_location {
+   width: 12px;
+}
+#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_linkedin {
+   width: 15px;
+}
+
+.bd{
+   border: 1px dotted;
+}
