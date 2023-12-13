@@ -66,6 +66,7 @@ header {
    display: flex;
    flex-direction: column;
    width: 280px;
+   margin-right: 30px;
 }
 
 #header #hcontent #hcontent_left #full_name{
@@ -84,7 +85,7 @@ header {
 
 #header #hcontent #hcontent_middle{
    float: none;
-   width: 180px;
+   width: 150px;
 }
 
 #header #hcontent #hcontent_middle .photo_container{
@@ -92,28 +93,36 @@ header {
    justify-content: center;
    text-align: center;
    position: relative;
-   top:0;
-   right:0;
-   width: 180px;
+   width: 150px;
+   height: 150px;
    margin-top: 15px;
 }
 
 #header #hcontent #hcontent_middle .photo_container .photo_container__frame {
    display: inline-block;
-   flex: 1 0 auto;
    z-index: 10;
    position: absolute;
-   top:0;
-   right:0;
+   top: 0;
+   left: 0;
 }
 
 #header #hcontent #hcontent_middle .photo_container .photo_container__photo {
    display: inline-block;
-   align-self: center;
    z-index: 5;
    position: absolute;
-   top:0;
-   right:0;
+   top: 0;
+   left: 0;
+   text-align: center;
+}
+
+#header #hcontent #hcontent_middle .photo_container .photo_container__frame img{
+   width: 150px;
+}
+
+#header #hcontent #hcontent_middle .photo_container .photo_container__photo img{
+   text-align: center;
+   margin: 10px 0 0 5px;
+   width: 140px;
 }
 
 #header #hcontent #hcontent_right{
