@@ -32,7 +32,7 @@ header {
 }
 
 #content_wrapper {
-   background: yellow;
+   background: #ffffff;
    flex-grow: 1;
 }
 
@@ -184,4 +184,29 @@ header {
 
 .bd {
    border: 1px dotted;
+}
+#main #content_wrapper #work_experience_title {
+   margin: 20px 0 0 50px;
+   font-weight: bold;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_boxcontent {
+   display: block;
+   width: 50px;
+   float: left;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_boxcontent #work_experience_box {
+   width: 35px;
+   height: 50px;
+   background-color: rgb(228, 0, 0);
+   display: block;
+   margin: 10px 0 0 0;
+   float: left;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_content {
+   border: 1px dotted;
+   display: inline-flex;
+   float: none;
 }
