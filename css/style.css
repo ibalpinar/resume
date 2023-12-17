@@ -13,7 +13,7 @@ body {
    font: 15px Verdana;
 }
 
-#resumewrapper{
+.resumewrapper{
    border: 0px solid rgb(151, 151, 151);
    background-color: rgb(255, 255, 255);
 }
@@ -23,29 +23,35 @@ header {
    width: 800px;
 }
 
-#main {
+.main {
    flex-grow: 1;           /* Grow to fill available space */
    display: flex;
-   background: #e8e8e8;
+   background: #ffffff;
    border-top: 2px solid black;
    width: 800px;
+   padding: 0 0 50px 0;
 }
 
-#content_wrapper {
+.content_wrapper {
    background: #ffffff;
-   flex-grow: 1;
+   width: 500px;
 }
 
-#header div {
+.skills_and_others{
+   background: #ffffff;
+   width: 300px;
+}
+
+.header div {
    float: left;
 }
 
-#header #hboxcontent {
+.header .hboxcontent {
    width: 50px;
    height: 150px;
 }
 
-#header #hboxcontent #hbox {
+.header .hboxcontent .hbox {
    width: 35px;
    height: 50px;
    background-color: rgb(18, 18, 83);
@@ -53,19 +59,19 @@ header {
    margin: 30px 0 0 0;
 }
 
-#header #hcontent {
+.header .hcontent {
    display: flex;
    flex-direction: row;
    width: 748px;
    margin-bottom: 0px;
 }
 
-#header #hcontent .hcontent_column {
+.header .hcontent .hcontent_column {
    float: left;
    height: 170px;
 }
 
-#header #hcontent #hcontent_left {
+.header .hcontent .hcontent_left {
    float: none;
    display: flex;
    flex-direction: column;
@@ -73,28 +79,28 @@ header {
    margin-right: 30px;
 }
 
-#header #hcontent #hcontent_left #full_name {
+.header .hcontent .hcontent_left .full_name {
    font-size: 30px;
    margin-top: 25px;
 }
 
-#header #hcontent #hcontent_left #title {
+.header .hcontent .hcontent_left .title {
    font-size: 15px;
    color: red;
    margin-top: 1px;
 }
 
-#header #hcontent #hcontent_left #objective {
+.header .hcontent .hcontent_left .objective {
    font-size: 12px;
-   margin-top: 10px;
+   margin-top: 7px;
 }
 
-#header #hcontent #hcontent_middle {
+.header .hcontent .hcontent_middle {
    float: none;
    width: 150px;
 }
 
-#header #hcontent #hcontent_middle .photo_container {
+.header .hcontent .hcontent_middle .photo_container {
    display: inline-block;
    justify-content: center;
    text-align: center;
@@ -104,7 +110,7 @@ header {
    margin-top: 15px;
 }
 
-#header #hcontent #hcontent_middle .photo_container .photo_container__frame {
+.header .hcontent .hcontent_middle .photo_container .photo_container__frame {
    display: inline-block;
    z-index: 10;
    position: absolute;
@@ -112,7 +118,7 @@ header {
    left: 0;
 }
 
-#header #hcontent #hcontent_middle .photo_container .photo_container__photo {
+.header .hcontent .hcontent_middle .photo_container .photo_container__photo {
    display: inline-block;
    z-index: 5;
    position: absolute;
@@ -121,17 +127,17 @@ header {
    text-align: center;
 }
 
-#header #hcontent #hcontent_middle .photo_container .photo_container__frame img {
+.header .hcontent .hcontent_middle .photo_container .photo_container__frame img {
    width: 150px;
 }
 
-#header #hcontent #hcontent_middle .photo_container .photo_container__photo img {
+.header .hcontent .hcontent_middle .photo_container .photo_container__photo img {
    text-align: center;
    margin: 10px 0 0 5px;
    width: 140px;
 }
 
-#header #hcontent #hcontent_right {
+.header .hcontent .hcontent_right {
    float: none;
    width: 290px;
    display: flex;
@@ -139,11 +145,11 @@ header {
    padding-top: 15px;
 }
 
-#header #hcontent #hcontent_right .contact_container {
-   margin-top: 8px;
+.header .hcontent .hcontent_right .contact_container {
+   margin-top: 6px;
 }
 
-#header #hcontent #hcontent_right .contact_container .contact_info {
+.header .hcontent .hcontent_right .contact_container .contact_info {
    float: left;
    text-align: right;
    border: 0px solid;
@@ -154,7 +160,7 @@ header {
    border: 0px dotted;
 }
 
-#header #hcontent #hcontent_right .contact_container .contact_icon {
+.header .hcontent .hcontent_right .contact_container .contact_icon {
    float: right;
    border: 0px solid;
    font-size: 13px;
@@ -166,78 +172,99 @@ header {
    margin-right: 20px;
 }
 
-#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_email {
+.header .hcontent .hcontent_right .contact_container .contact_icon .contact_icon_email {
    width: 17px;
 }
 
-#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_mobile {
+.header .hcontent .hcontent_right .contact_container .contact_icon .contact_icon_mobile {
    width: 12px;
 }
 
-#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_location {
+.header .hcontent .hcontent_right .contact_container .contact_icon .contact_icon_location {
    width: 12px;
 }
 
-#header #hcontent #hcontent_right .contact_container .contact_icon #contact_icon_linkedin {
+.header .hcontent .hcontent_right .contact_container .contact_icon .contact_icon_linkedin {
    width: 15px;
 }
 
-.bd {
-   border: 1px dotted;
-}
-#main #content_wrapper #work_experience_title {
+.main .content_wrapper .work_experience_title {
    margin: 20px 0 0 50px;
    font-weight: bold;
    font-size: 17px;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_boxcontent {
+.main .content_wrapper .work_experience_container {
+   display: block;
+   margin: 10px 0 15px 0;
+}
+
+.main .content_wrapper .work_experience_container .work_experience_boxcontent {
    display: block;
    width: 50px;
    float: left;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_boxcontent #work_experience_box {
+.main .content_wrapper .work_experience_container .work_experience_boxcontent .work_experience_box {
    width: 35px;
    height: 50px;
-   background-color: rgb(228, 0, 0);
+   background-color: #ff0000;
    display: block;
-   margin: 10px 0 0 0;
+   margin: 4px 0 0 0;
    float: left;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_content {
-   border: 1px dotted;
+.main .content_wrapper .work_experience_container .work_experience_content {
    display: flex;
    flex-direction: column;
    float: none;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_content #position{
+.main .content_wrapper .work_experience_container .work_experience_content .position{
    font-weight: bold;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_content #company{
+.main .content_wrapper .work_experience_container .work_experience_content .company{
    font-size: 14px;
+   margin: 5px 0 0 0;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_content #working_time{
+.main .content_wrapper .work_experience_container .work_experience_content .time_location{
    font-size: 12px;
    font-style: italic;
    color: #ff0000;
+   margin: 5px 0 0 0;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_content #accomplishments #accomplishments_title{
+.main .content_wrapper .work_experience_container .work_experience_content .time_location .duration{
+   float: left;
+}
+
+.main .content_wrapper .work_experience_container .work_experience_content .time_location .location{
+   float: right;
+   margin: 0 10px 0 0;
+}
+
+.main .content_wrapper .work_experience_container .work_experience_content .accomplishments {
+   margin: 5px 0 0 0;
+}
+
+.main .content_wrapper .work_experience_container .work_experience_content .accomplishments .accomplishments_title{
    font-size: 12px;
    font-style: italic;
    color: #ff0000;
+   margin: 0 0 0 0;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_content #accomplishments ul{
+.main .content_wrapper .work_experience_container .work_experience_content .accomplishments ul{
    color: #ff0000;
+   margin: 0 0 0 0;
+   padding: 0 0 0 25px;
 }
 
-#main #content_wrapper #work_experience_container #work_experience_content #accomplishments ul li span{
-   font-size: 12px;
+.main .content_wrapper .work_experience_container .work_experience_content .accomplishments ul li div{
+   font-size: 11px;
    color: #000000;
+   margin: 4px 0 0 0;
+   padding: 0 0 0 0;
 }
