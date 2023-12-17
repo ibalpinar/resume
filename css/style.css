@@ -188,6 +188,7 @@ header {
 #main #content_wrapper #work_experience_title {
    margin: 20px 0 0 50px;
    font-weight: bold;
+   font-size: 17px;
 }
 
 #main #content_wrapper #work_experience_container #work_experience_boxcontent {
@@ -207,6 +208,36 @@ header {
 
 #main #content_wrapper #work_experience_container #work_experience_content {
    border: 1px dotted;
-   display: inline-flex;
+   display: flex;
+   flex-direction: column;
    float: none;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_content #position{
+   font-weight: bold;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_content #company{
+   font-size: 14px;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_content #working_time{
+   font-size: 12px;
+   font-style: italic;
+   color: #ff0000;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_content #accomplishments #accomplishments_title{
+   font-size: 12px;
+   font-style: italic;
+   color: #ff0000;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_content #accomplishments ul{
+   color: #ff0000;
+}
+
+#main #content_wrapper #work_experience_container #work_experience_content #accomplishments ul li span{
+   font-size: 12px;
+   color: #000000;
 }
