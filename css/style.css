@@ -288,7 +288,7 @@ header {
 }
 
 .main .skills_and_others .skills_container .skill {
-   display: inline-block;
+   display: flex;
    font: 11px Verdana;
    border-radius: 6px;
    background: #2b343d;
@@ -298,10 +298,34 @@ header {
    margin: 3px;
 }
 
-/*
-.main .content_wrapper .work_experience_title {
-   margin: 15px 0 0 50px;
+.main .skills_and_others .education_container {
+   display: flex;
+   flex-direction: column;
+}
+
+.main .skills_and_others .education_container .education_title {
+   margin: 15px 0 10px 0;
    font-weight: bold;
    font-size: 17px;
 }
-*/
+
+.main .skills_and_others .education_container .school_wrapper {
+   margin: 0 0 15px 0;
+}
+
+.main .skills_and_others .education_container .school_wrapper .school {
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.main .skills_and_others .education_container .school_wrapper .school_department {
+   font-size: 14px;
+   margin: 5px 0 0 0;
+}
+
+.main .skills_and_others .education_container .school_wrapper .school_location {
+   font-size: 12px;
+   font-style: italic;
+   color: #ff0000;
+   margin: 5px 0 0 0;
+}
