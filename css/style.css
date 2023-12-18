@@ -327,5 +327,33 @@ header {
    font-size: 12px;
    font-style: italic;
    color: #ff0000;
-   margin: 5px 0 0 0;
+   margin: 3px 0 0 0;
+}
+
+
+.main .skills_and_others .courses_container {
+   display: flex;
+   flex-direction: column;
+   padding: 0 25px 0 0;
+}
+
+.main .skills_and_others .courses_container .courses_title {
+   margin: 15px 0 10px 0;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.main .skills_and_others .courses_container .course_wrapper {
+   margin: 0 0 10px 0;
+}
+
+.main .skills_and_others .courses_container .course_wrapper .course_name {
+   font-size: 13px;
+}
+
+.main .skills_and_others .courses_container .course_wrapper .course_company {
+   font-size: 12px;
+   font-style: italic;
+   color: #9b9b9b;
+   margin: 3px 0 0 0;
 }
