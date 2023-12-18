@@ -1,11 +1,11 @@
 html {
-   height: 100%;           /* Fill all the window */
+   height: 100%;
 }
 
 body {
-   min-height: 100%;       /* At least fill all <html> */
-   display: flex;          /* Magic begins */
-   flex-direction: column; /* Column layout */
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
    margin: 0;
    padding: 0;
    place-items: center;
@@ -24,7 +24,7 @@ header {
 }
 
 .main {
-   flex-grow: 1;           /* Grow to fill available space */
+   flex-grow: 1;
    display: flex;
    background: #ffffff;
    border-top: 2px solid black;
@@ -32,12 +32,15 @@ header {
    padding: 0 0 50px 0;
 }
 
-.content_wrapper {
+.main .content_wrapper {
    background: #ffffff;
-   width: 500px;
+   width: 480px;
+   padding: 0 20px 0 0;
 }
 
 .skills_and_others{
+   display: flex;
+   flex-direction: column;
    background: #ffffff;
    width: 300px;
 }
@@ -54,7 +57,7 @@ header {
 .header .hboxcontent .hbox {
    width: 35px;
    height: 50px;
-   background-color: rgb(18, 18, 83);
+   background-color: #2b343d;
    display: block;
    margin: 30px 0 0 0;
 }
@@ -189,7 +192,7 @@ header {
 }
 
 .main .content_wrapper .work_experience_title {
-   margin: 20px 0 0 50px;
+   margin: 15px 0 0 50px;
    font-weight: bold;
    font-size: 17px;
 }
@@ -267,4 +270,121 @@ header {
    color: #000000;
    margin: 4px 0 0 0;
    padding: 0 0 0 0;
+}
+
+.main .skills_and_others .skills_title {
+   margin: 15px 0 0 0;
+   font-weight: bold;
+   font-size: 17px;
+}
+.main .skills_and_others .skills_container {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 3px 0 0 0;
+   padding: 0 10px 10px 0;
+   width: 100%;
+   white-space: nowrap;
+}
+
+.main .skills_and_others .skills_container .skill {
+   display: flex;
+   font: 11px Verdana;
+   border-radius: 6px;
+   background: #2b343d;
+   color: #ffffff;
+   padding: 5px 10px 5px 10px;
+   white-space: nowrap;
+   margin: 3px;
+}
+
+.main .skills_and_others .education_container {
+   display: flex;
+   flex-direction: column;
+}
+
+.main .skills_and_others .education_container .education_title {
+   margin: 15px 0 10px 0;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.main .skills_and_others .education_container .school_wrapper {
+   margin: 0 0 15px 0;
+}
+
+.main .skills_and_others .education_container .school_wrapper .school {
+   font-weight: bold;
+   font-size: 14px;
+}
+
+.main .skills_and_others .education_container .school_wrapper .school_department {
+   font-size: 14px;
+   margin: 5px 0 0 0;
+}
+
+.main .skills_and_others .education_container .school_wrapper .school_location {
+   font-size: 12px;
+   font-style: italic;
+   color: #ff0000;
+   margin: 3px 0 0 0;
+}
+
+.main .skills_and_others .courses_container {
+   display: flex;
+   flex-direction: column;
+   padding: 0 25px 0 0;
+}
+
+.main .skills_and_others .courses_container .courses_title {
+   margin: 15px 0 10px 0;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.main .skills_and_others .courses_container .course_wrapper {
+   margin: 0 0 10px 0;
+}
+
+.main .skills_and_others .courses_container .course_wrapper .course_name {
+   font-size: 13px;
+}
+
+.main .skills_and_others .courses_container .course_wrapper .course_company {
+   font-size: 12px;
+   font-style: italic;
+   color: #9b9b9b;
+   margin: 3px 0 0 0;
+}
+
+
+.main .skills_and_others .interests_container {
+   display: flex;
+   flex-direction: column;
+   padding: 0 25px 0 0;
+}
+
+.main .skills_and_others .interests_container .interest_title {
+   margin: 15px 0 10px 0;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper {
+   margin: 0 0 10px 0;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper .interest_icon {
+   float: left;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper .interest_icon img {
+   width: 25px;
+   height: 25px;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper .interest {
+   float: left;
+   font-size: 13px;
+   margin: 4px 0 0 5px;
 }
