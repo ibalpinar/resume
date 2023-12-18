@@ -330,7 +330,6 @@ header {
    margin: 3px 0 0 0;
 }
 
-
 .main .skills_and_others .courses_container {
    display: flex;
    flex-direction: column;
@@ -356,4 +355,36 @@ header {
    font-style: italic;
    color: #9b9b9b;
    margin: 3px 0 0 0;
+}
+
+
+.main .skills_and_others .interests_container {
+   display: flex;
+   flex-direction: column;
+   padding: 0 25px 0 0;
+}
+
+.main .skills_and_others .interests_container .interest_title {
+   margin: 15px 0 10px 0;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper {
+   margin: 0 0 10px 0;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper .interest_icon {
+   float: left;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper .interest_icon img {
+   width: 25px;
+   height: 25px;
+}
+
+.main .skills_and_others .interests_container .interest_wrapper .interest {
+   float: left;
+   font-size: 13px;
+   margin: 4px 0 0 5px;
 }
