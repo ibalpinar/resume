@@ -49,21 +49,25 @@ header {
    width: 300px;
 }
 
-.header div {
-   float: left;
+.header {
+   display: flex;
+   flex-direction: row;
 }
 
-.header .headeer_box_content {
-   width: 50px;
-   height: 150px;
-}
-
-.header .headeer_box_content .header_box {
+.box::before {
+   display: flex;
    width: 35px;
    height: 50px;
+   margin: 26px 10px 0 0;
+   content: ' ';
+}
+
+.header .box::before {
    background-color: #2b343d;
-   display: block;
-   margin: 30px 0 0 0;
+}
+
+.work_experience_container .box::before {
+   background-color: #ff0000;
 }
 
 .header .header_content {
@@ -202,29 +206,13 @@ header {
 }
 
 .main .content_wrapper .work_experience_container {
-   display: block;
+   display: flex;
    margin: 0 0 25px 0;
-}
-
-.main .content_wrapper .work_experience_container .work_experience_boxcontent {
-   display: block;
-   width: 50px;
-   float: left;
-}
-
-.main .content_wrapper .work_experience_container .work_experience_boxcontent .work_experience_box {
-   width: 35px;
-   height: 50px;
-   background-color: #ff0000;
-   display: block;
-   margin: 4px 0 0 0;
-   float: left;
 }
 
 .main .content_wrapper .work_experience_container .work_experience_content {
    display: flex;
    flex-direction: column;
-   float: none;
 }
 
 .main .content_wrapper .work_experience_container .work_experience_content .position{
