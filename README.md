@@ -8,6 +8,8 @@ By the way, I decided that this resume outline can be modified by everyone for t
 
 New visual designs will be added step by step to this draft.
 
+[![GitHub Streak](https://streak-stats.demolab.com/?user=ibalpinar)](https://git.io/streak-stats)
+
 ### Short Bio
 
 - ⚙️ Use daily: `.js`, `.java`, `.sh`, `.html`, `.css`, `.sql`, `.py`
