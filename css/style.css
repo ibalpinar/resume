@@ -37,8 +37,9 @@ header {
 }
 
 .main .work {
+   display: flex;
+   flex-direction: column;
    background: #ffffff;
-   width: 480px;
    padding: 0 20px 0 0;
 }
 
@@ -191,30 +192,37 @@ header {
 
 .main .work .title {
    margin: 15px 0 10px 43px;
-   font-weight: bold;
-   font-size: 17px;
 }
 
 .main .work .container {
    display: flex;
    margin: 0 0 25px 0;
+   flex: 1;
+   width: 480px;
 }
 
 .main .work .container .experience {
    display: flex;
    flex-direction: column;
+   flex: 1;
+}
+
+.main .work .container .experience header{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
 }
 
 .main .work .container .experience .position{
-   font-weight: bold;
+   margin: 0;
 }
 
 .main .work .container .experience .company{
-   font-size: 14px;
+   font-weight:100;
    margin: 5px 0 0 0;
 }
 
-.main .work .container .experience .time_location{
+.main .work .container .experience .duration_location{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -222,13 +230,20 @@ header {
    font-style: italic;
    color: #ff0000;
    margin: 7px 10px 5px 0;
+   width: 430px;
+   font-weight:100;
 }
 
-.main .work .container .experience .accomplishments .accomplishments_title{
+.main .work .container .experience .accomplishments {
+   width: 430px;
+}
+
+.main .work .container .experience .accomplishments .title{
    font-size: 12px;
    font-style: italic;
    color: #ff0000;
    margin: 0 0 0 0;
+   font-weight:100;
 }
 
 .main .work .container .experience .accomplishments ul{
@@ -244,12 +259,10 @@ header {
    padding: 0 0 0 0;
 }
 
-.main .others .skills_title {
+.main .others .skills .title {
    margin: 15px 0 0 0;
-   font-weight: bold;
-   font-size: 17px;
 }
-.main .others .skills_container {
+.main .others .skills .container {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -259,7 +272,7 @@ header {
    white-space: nowrap;
 }
 
-.main .others .skills_container .skill {
+.main .others .skills .container .skill {
    display: flex;
    font: 11px Verdana;
    border-radius: 6px;
@@ -277,8 +290,6 @@ header {
 
 .main .others .education .title {
    margin: 15px 0 10px 0;
-   font-weight: bold;
-   font-size: 17px;
 }
 
 .main .others .education .school {
@@ -338,8 +349,6 @@ header {
 
 .main .others .interests .title {
    margin: 15px 0 10px 0;
-   font-weight: bold;
-   font-size: 17px;
 }
 
 .main .others .interests .container {
