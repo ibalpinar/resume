@@ -36,13 +36,13 @@ header {
    padding: 0 0 50px 0;
 }
 
-.main .content_wrapper {
+.main .work {
    background: #ffffff;
    width: 480px;
    padding: 0 20px 0 0;
 }
 
-.skills_and_others{
+.others{
    display: flex;
    flex-direction: column;
    background: #ffffff;
@@ -52,6 +52,7 @@ header {
 .header {
    display: flex;
    flex-direction: row;
+   padding: 10px 0 10px 0;
 }
 
 .box::before {
@@ -66,18 +67,9 @@ header {
    background-color: #2b343d;
 }
 
-.work_experience_container .box::before {
+.main .work .container .box::before {
    background-color: #ff0000;
 }
-
-/*
-.header .header_content {
-   display: flex;
-   flex-direction: row;
-   width: 748px;
-   margin-bottom: 0px;
-}
-*/
 
 .header .left {
    display: flex;
@@ -89,7 +81,7 @@ header {
 
 .header .left .full_name {
    font-size: 30px;
-   margin-top: 25px;
+   margin-top: 20px;
 }
 
 .header .left .title {
@@ -155,22 +147,22 @@ header {
 }
 
 .header .right .contact {
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;
    margin-top: 6px;
 }
 
 .header .right .contact .info {
-   float: left;
    text-align: right;
    border: 0px solid;
    font-size: 12px;
    width: 235px;
    height: 30px;
    vertical-align: middle;
-   border: 0px dotted;
 }
 
 .header .right .contact .icon {
-   float: right;
    border: 0px solid;
    font-size: 13px;
    width: 25px;
@@ -197,77 +189,67 @@ header {
    width: 15px;
 }
 
-.main .content_wrapper .work_experience_title {
-   margin: 15px 0 10px 50px;
+.main .work .title {
+   margin: 15px 0 10px 43px;
    font-weight: bold;
    font-size: 17px;
 }
 
-.main .content_wrapper .work_experience_container {
+.main .work .container {
    display: flex;
    margin: 0 0 25px 0;
 }
 
-.main .content_wrapper .work_experience_container .work_experience_content {
+.main .work .container .experience {
    display: flex;
    flex-direction: column;
 }
 
-.main .content_wrapper .work_experience_container .work_experience_content .position{
+.main .work .container .experience .position{
    font-weight: bold;
 }
 
-.main .content_wrapper .work_experience_container .work_experience_content .company{
+.main .work .container .experience .company{
    font-size: 14px;
    margin: 5px 0 0 0;
 }
 
-.main .content_wrapper .work_experience_container .work_experience_content .time_location{
+.main .work .container .experience .time_location{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
    font-size: 12px;
    font-style: italic;
    color: #ff0000;
-   margin: 5px 0 0 0;
+   margin: 7px 10px 5px 0;
 }
 
-.main .content_wrapper .work_experience_container .work_experience_content .time_location .duration{
-   float: left;
-}
-
-.main .content_wrapper .work_experience_container .work_experience_content .time_location .location{
-   float: right;
-   margin: 0 10px 0 0;
-}
-
-.main .content_wrapper .work_experience_container .work_experience_content .accomplishments {
-   margin: 5px 0 0 0;
-}
-
-.main .content_wrapper .work_experience_container .work_experience_content .accomplishments .accomplishments_title{
+.main .work .container .experience .accomplishments .accomplishments_title{
    font-size: 12px;
    font-style: italic;
    color: #ff0000;
    margin: 0 0 0 0;
 }
 
-.main .content_wrapper .work_experience_container .work_experience_content .accomplishments ul{
+.main .work .container .experience .accomplishments ul{
    color: #ff0000;
    margin: 0 0 0 0;
    padding: 0 0 0 25px;
 }
 
-.main .content_wrapper .work_experience_container .work_experience_content .accomplishments ul li div{
+.main .work .container .experience .accomplishments ul li div{
    font-size: 11px;
    color: #000000;
    margin: 4px 0 0 0;
    padding: 0 0 0 0;
 }
 
-.main .skills_and_others .skills_title {
+.main .others .skills_title {
    margin: 15px 0 0 0;
    font-weight: bold;
    font-size: 17px;
 }
-.main .skills_and_others .skills_container {
+.main .others .skills_container {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -277,7 +259,7 @@ header {
    white-space: nowrap;
 }
 
-.main .skills_and_others .skills_container .skill {
+.main .others .skills_container .skill {
    display: flex;
    font: 11px Verdana;
    border-radius: 6px;
@@ -288,59 +270,59 @@ header {
    margin: 3px;
 }
 
-.main .skills_and_others .education_container {
+.main .others .education {
    display: flex;
    flex-direction: column;
 }
 
-.main .skills_and_others .education_container .education_title {
+.main .others .education .title {
    margin: 15px 0 10px 0;
    font-weight: bold;
    font-size: 17px;
 }
 
-.main .skills_and_others .education_container .school_wrapper {
+.main .others .education .school {
    margin: 0 0 15px 0;
 }
 
-.main .skills_and_others .education_container .school_wrapper .school {
+.main .others .education .school .name {
    font-weight: bold;
    font-size: 14px;
 }
 
-.main .skills_and_others .education_container .school_wrapper .school_department {
+.main .others .education .school .department {
    font-size: 14px;
    margin: 5px 0 0 0;
 }
 
-.main .skills_and_others .education_container .school_wrapper .school_location {
+.main .others .education .school .location {
    font-size: 12px;
    font-style: italic;
    color: #ff0000;
    margin: 3px 0 0 0;
 }
 
-.main .skills_and_others .courses_container {
+.main .others .courses {
    display: flex;
    flex-direction: column;
    padding: 0 25px 0 0;
 }
 
-.main .skills_and_others .courses_container .courses_title {
+.main .others .courses .title {
    margin: 15px 0 10px 0;
    font-weight: bold;
    font-size: 17px;
 }
 
-.main .skills_and_others .courses_container .course_wrapper {
+.main .others .courses .container {
    margin: 0 0 10px 0;
 }
 
-.main .skills_and_others .courses_container .course_wrapper .course_name {
+.main .others .courses .container .name {
    font-size: 13px;
 }
 
-.main .skills_and_others .courses_container .course_wrapper .course_company {
+.main .others .courses .container .company {
    font-size: 12px;
    font-style: italic;
    color: #9b9b9b;
@@ -348,32 +330,32 @@ header {
 }
 
 
-.main .skills_and_others .interests_container {
+.main .others .interests {
    display: flex;
    flex-direction: column;
    padding: 0 25px 0 0;
 }
 
-.main .skills_and_others .interests_container .interest_title {
+.main .others .interests .title {
    margin: 15px 0 10px 0;
    font-weight: bold;
    font-size: 17px;
 }
 
-.main .skills_and_others .interests_container .interest_wrapper {
+.main .others .interests .container {
    margin: 0 0 10px 0;
 }
 
-.main .skills_and_others .interests_container .interest_wrapper .interest_icon {
+.main .others .interests .container .icon {
    float: left;
 }
 
-.main .skills_and_others .interests_container .interest_wrapper .interest_icon img {
+.main .others .interests .container .icon img {
    width: 25px;
    height: 25px;
 }
 
-.main .skills_and_others .interests_container .interest_wrapper .interest {
+.main .others .interests .container .name {
    float: left;
    font-size: 13px;
    margin: 4px 0 0 5px;
