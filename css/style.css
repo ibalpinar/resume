@@ -13,7 +13,7 @@ body {
    font: 15px Verdana;
 }
 
-.resume_wrapper{
+.resume_container{
    border: 0px solid rgb(151, 151, 151);
    background-color: rgb(255, 255, 255);
    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
