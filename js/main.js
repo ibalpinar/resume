@@ -11,5 +11,6 @@ editTitle(resume.data.header.fullName);
 generateHeader(resume.data.header);
 generateWorkExperience(resume.data.workExperience);
 generateSkills(resume.data.skills);
+generateEducation(resume.data.education);
 generateCourses(resume.data.courses);
 generateInterests(resume.data.interests);
