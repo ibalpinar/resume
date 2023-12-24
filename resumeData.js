@@ -6,7 +6,7 @@ let resume = {
       "header": {
          "fullName": "İlker Balpınar",
          "title": "Director of Engineering",
-         "objection": "My focus is scalable, high-traffic web and mobile applications. My goal is to manage and grow the technology department.",
+         "objective": "My focus is scalable, high-traffic web and mobile applications. My goal is to manage and grow the technology department.",
          "photograph": "ilker-balpinar-fotograf-kare.jpg",
          "email": "ilker[at]balpinar[dot]com",
          "mobile": "+90-533-***-****",
