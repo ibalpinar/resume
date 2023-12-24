@@ -73,8 +73,6 @@ let editTitle = function(titleData){
 };
 
 let generateContactDiv = function(contactData, iconName){
-   const template = document.createElement("template");
-
    const contact = document.createElement("div");
    contact.classList.add("contact");
 
@@ -84,16 +82,15 @@ let generateContactDiv = function(contactData, iconName){
    contact.insertAdjacentElement("beforeend", info);
 
    const icon = document.createElement("div");
-   icon.classList.add("info");
+   icon.classList.add("icon");
 
    const iconImage = document.createElement("img");
-   iconImage.src = `images/${iconName}`;
+   iconImage.src = `images/${iconName}.png`;
+   iconImage.classList.add(`icon_${iconName}`);
    icon.insertAdjacentElement("beforeend", iconImage);
    contact.insertAdjacentElement("beforeend", icon);
 
-   template.insertAdjacentElement("beforeend", contact);
-
-   return template;
+   return contact;
 };
 
 let generateHeader = function(headerData){
@@ -145,17 +142,11 @@ let generateHeader = function(headerData){
    headerRightContainer.classList.add("right");
    headerElement.insertAdjacentElement("beforeend", headerRightContainer);
 
-   headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.email, "email.png"));
+   headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.email, "email"));
+   headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.mobile, "mobile"));
+   headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.location, "location"));
+   headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.linkedin, "linkedin"));
    //Header Right End
-
-
-
-
-
-
-
-
-
 };
 
 documentReady(function() {
