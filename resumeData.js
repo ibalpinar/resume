@@ -1,4 +1,4 @@
-{
+let resume = {
    "configuration": {
       "theme": "default"
    },
@@ -315,8 +315,4 @@
          }
       ]
    }
-}
-
-
-
-
+};
