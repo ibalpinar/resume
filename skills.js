@@ -1,0 +1,2 @@
+let generateSkills = function(skillsData){
+};
