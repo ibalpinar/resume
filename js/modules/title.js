@@ -1,3 +1,3 @@
-let editTitle = function(titleData){
+export const editTitle = function(titleData){
    document.title = titleData.trim();
 };

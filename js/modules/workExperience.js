@@ -1,2 +1,2 @@
-let generateWorkExperience = function(workExperienceData){
+export const generateWorkExperience = function(workExperienceData){
 };

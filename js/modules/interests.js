@@ -1,2 +1,2 @@
-let generateInterests = function(interestsData){
+export const generateInterests = function(interestsData){
 };

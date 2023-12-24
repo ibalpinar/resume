@@ -1,4 +1,4 @@
-let generateContactDiv = function(contactData, iconName){
+const generateContactDiv = function(contactData, iconName){
    const contact = document.createElement("div");
    contact.classList.add("contact");
 
@@ -19,7 +19,7 @@ let generateContactDiv = function(contactData, iconName){
    return contact;
 };
 
-let generateHeader = function(headerData){
+export const generateHeader = function(headerData){
    const headerElement = document.querySelector(".header");
 
    //Header Left Start

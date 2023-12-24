@@ -1,2 +1,2 @@
-let generateSkills = function(skillsData){
+export const generateSkills = function(skillsData){
 };

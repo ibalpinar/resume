@@ -1,4 +1,4 @@
-let resume = {
+export const resume = {
    "configuration": {
       "theme": "default"
    },
