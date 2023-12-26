@@ -1,18 +1,16 @@
 export const generateWorkExperience = function(workExperienceData, resumeConfiguration){
-   const headerWork = document.querySelector(".work");
+   const workSection = document.querySelector(".work");
 
    const workTitle = document.createElement("h3");
    workTitle.classList.add("title");
    workTitle.textContent = resumeConfiguration.workExperienceTitle.toUpperCase();
-   headerWork.insertAdjacentElement("beforeend", workTitle);
+   workSection.insertAdjacentElement("beforeend", workTitle);
 
    // Start of Company List
-
-   workExperienceData.list.forEach((workExperience) => {
-
+   workExperienceData.forEach((workExperience) => {
       const workContainer = document.createElement("div");
       workContainer.classList.add("container");
-      headerWork.insertAdjacentElement("beforeend", workContainer);
+      workSection.insertAdjacentElement("beforeend", workContainer);
 
       const workBox = document.createElement("div");
       workBox.classList.add("box");
