@@ -11,7 +11,7 @@ const generateContactDiv = function(contactData, iconName){
    icon.classList.add("icon");
 
    const iconImage = document.createElement("img");
-   iconImage.src = `images/${iconName}.png`;
+   iconImage.src = `./images/${iconName}.png`;
    iconImage.classList.add(`icon_${iconName}`);
    icon.insertAdjacentElement("beforeend", iconImage);
    contact.insertAdjacentElement("beforeend", icon);
