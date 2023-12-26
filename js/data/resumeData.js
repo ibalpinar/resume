@@ -209,14 +209,14 @@ export const resume = {
       "education": [
          {
             "school": "Yıldız Technical University",
-            "department": "Yıldız Technical University",
+            "department": "BSc, Mathematical Engineering",
             "location": "Istanbul, Turkey",
             "start": "",
             "end": "",
             "degree": ""
          },
          {
-            "school": "Maçka Technical Anatolian High School",
+            "school": "Maçka Technical High School",
             "department": "Electrical / Electronics",
             "location": "Istanbul, Turkey",
             "start": "",
