@@ -23,7 +23,6 @@ export const generateSkills = function(skillsData, resumeConfiguration){
    skillsContainer.classList.add("container");
    skills.insertAdjacentElement("beforeend", skillsContainer);
 
-
    // Start of Skills List
    skillsData.forEach((skillText) => {
       const skill = document.createElement("div");
