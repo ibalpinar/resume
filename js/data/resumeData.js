@@ -289,35 +289,35 @@ export const resume = {
       "interests": [
          {
             "name": "Photography",
-            "icon": "interest_photography.png"
+            "iconName": "interest_photography.png"
          },
          {
             "name": "Constant Reading",
-            "icon": "interest_book.png"
+            "iconName": "interest_book.png"
          },
          {
             "name": "Chess",
-            "icon": "interest_chess.png"
+            "iconName": "interest_chess.png"
          },
          {
             "name": "Chess",
-            "icon": "interest_basketball.png"
+            "iconName": "interest_basketball.png"
          },
          {
             "name": "Swimming",
-            "icon": "interest_swimming.png"
+            "iconName": "interest_swimming.png"
          },
          {
             "name": "Travelling",
-            "icon": "interest_travel.png"
+            "iconName": "interest_travel.png"
          },
          {
             "name": "Science & Technology",
-            "icon": "interest_science_tech.png"
+            "iconName": "interest_science_tech.png"
          },
          {
             "name": "Cats",
-            "icon": "interest_cat.png"
+            "iconName": "interest_cat.png"
          }
       ]
    }
