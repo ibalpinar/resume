@@ -14,7 +14,8 @@ export const resume = {
          "linkedin": "https://www.linkedin/in/ibalpinar"
       },
       "workExperience":{
-         "title": "Work Experience",
+         "workExperienceTitle": "Work Experience",
+         "accomplishmentTitle": "Accomplishments",
          "list" : [
             {
                "position": "Director of Software Development",
