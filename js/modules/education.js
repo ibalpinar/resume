@@ -1,14 +1,3 @@
-/*
-<article class="education">
-   <h3 class="title">EDUCATION</h3>
-   <div class="school">
-      <div class="name">Yıldız Technical University</div>
-      <div class="department">BSc, Mathematical Engineering</div>
-      <div class="location">Istanbul, Turkey</div>
-   </div>
-   [LOOP]
-</article>
-*/
 export const generateEducation = function(educationData, resumeConfiguration){
    const othersAside = document.querySelector(".others");
 

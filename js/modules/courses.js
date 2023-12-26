@@ -1,13 +1,3 @@
-/*
-<article class="courses">
-   <h3 class="title">COURSES</h3>
-   <div class="container">
-      <div class="name">CTO Leadership</div>
-      <div class="company">Kloia</div>
-   </div>
-   [LOOP]
-</article>
-*/
 export const generateCourses = function(coursesData, resumeConfiguration){
    const othersAside = document.querySelector(".others");
 

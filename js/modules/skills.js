@@ -1,12 +1,3 @@
-/*
-<article class="skills">
-   <h3 class="title">SKILLS</h3>
-   <div class="container">
-      <div class="skill">Effective Hiring</div>
-      [LOOP]
-   </div>
-</article>
-*/
 export const generateSkills = function(skillsData, resumeConfiguration){
    const othersAside = document.querySelector(".others");
 

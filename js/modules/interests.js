@@ -1,13 +1,3 @@
-/*
-<article class="interests">
-   <h3 class="title">INTERESTS</h3>
-   <div class="container">
-      <div class="icon"><img src="images/interest_photography.png" /></div>
-      <div class="name">Photography</div>
-   </div>
-   [LOOP]
-</article>
-*/
 export const generateInterests = function(interestsData, resumeConfiguration){
    const othersAside = document.querySelector(".others");
 
