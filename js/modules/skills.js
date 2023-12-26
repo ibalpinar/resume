@@ -1,2 +1,3 @@
-export const generateSkills = function(skillsData){
+export const generateSkills = function(skillsData, resumeConfiguration){
+
 };

@@ -1,2 +1,2 @@
-export const generateCourses = function(coursesData){
+export const generateCourses = function(coursesData, resumeConfiguration){
 };

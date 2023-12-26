@@ -1,7 +1,13 @@
 export const resume = {
    "configuration": {
-      "theme": "default"
-   },
+      "theme": "default",
+      "workExperienceTitle": "Work Experience",
+      "accomplishmentsTitle": "Accomplishments",
+      "skillsTitle": "Skills",
+      "educationTitle": "Education",
+      "coursesTitle": "Courses",
+      "interestsTitle": "Interests"
+},
    "data":{
       "header": {
          "fullName": "İlker Balpınar",
@@ -14,8 +20,6 @@ export const resume = {
          "linkedin": "https://www.linkedin/in/ibalpinar"
       },
       "workExperience":{
-         "workExperienceTitle": "Work Experience",
-         "accomplishmentTitle": "Accomplishments",
          "list" : [
             {
                "position": "Director of Software Development",

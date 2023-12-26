@@ -1,2 +1,2 @@
-export const generateInterests = function(interestsData){
+export const generateInterests = function(interestsData, resumeConfiguration){
 };

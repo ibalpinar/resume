@@ -1,2 +1,2 @@
-export const generateEducation = function(educationData){
+export const generateEducation = function(educationData, resumeConfiguration){
 };

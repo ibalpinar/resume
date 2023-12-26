@@ -19,7 +19,7 @@ const generateContactDiv = function(contactData, iconName){
    return contact;
 };
 
-export const generateHeader = function(headerData){
+export const generateHeader = function(headerData, resumeConfiguration){
    const headerElement = document.querySelector(".header");
 
    //Header Left Start

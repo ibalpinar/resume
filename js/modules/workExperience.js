@@ -1,9 +1,9 @@
-export const generateWorkExperience = function(workExperienceData){
+export const generateWorkExperience = function(workExperienceData, resumeConfiguration){
    const headerWork = document.querySelector(".work");
 
    const workTitle = document.createElement("h3");
    workTitle.classList.add("title");
-   workTitle.textContent = workExperienceData.workExperienceTitle.toUpperCase();
+   workTitle.textContent = resumeConfiguration.workExperienceTitle.toUpperCase();
    headerWork.insertAdjacentElement("beforeend", workTitle);
 
    // Start of Company List
@@ -57,7 +57,7 @@ export const generateWorkExperience = function(workExperienceData){
 
       const accomplishmentTitle = document.createElement("h5");
       accomplishmentTitle.classList.add("title");
-      accomplishmentTitle.textContent = workExperienceData.accomplishmentTitle
+      accomplishmentTitle.textContent = resumeConfiguration.accomplishmentsTitle
       accomplishments.insertAdjacentElement("beforeend", accomplishmentTitle);
 
       const accomplishmentList = document.createElement("ul");
