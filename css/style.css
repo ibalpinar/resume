@@ -12,6 +12,10 @@ body {
    margin: 0 auto;
 }
 
+.dotted {
+   border: 1px dotted;
+}
+
 .resume_container{
    border: 0px solid rgb(151, 151, 151);
    background-color: rgb(255, 255, 255);

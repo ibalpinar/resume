@@ -59,7 +59,6 @@ export const generateHeader = function(headerData){
    const headerImage = document.createElement("img");
    headerImage.src = `images/${headerData.photograph}`;
    headerPhotograph.insertAdjacentElement("beforeend", headerImage);
-
    //Header Middle End
 
    //Header Right Start
