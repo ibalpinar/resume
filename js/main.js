@@ -1,5 +1,5 @@
 import { resume } from './data/resumeData.js';
-import { editPageTitle } from './modules/pageTitle.js';
+import { setPageConfiguration } from './modules/pageConfiguration.js';
 import { generateHeader } from './modules/header.js';
 import { generateWorkExperience } from './modules/workExperience.js';
 import { generateSkills } from './modules/skills.js';
@@ -7,7 +7,7 @@ import { generateEducation } from './modules/education.js';
 import { generateCourses } from './modules/courses.js';
 import { generateInterests } from './modules/interests.js';
 
-editPageTitle(resume.data.header.fullName, resume.configuration);
+setPageConfiguration(resume.data.header.fullName, resume.configuration);
 generateHeader(resume.data.header, resume.configuration);
 generateWorkExperience(resume.data.workExperience, resume.configuration);
 generateSkills(resume.data.skills, resume.configuration);

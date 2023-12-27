@@ -1,5 +1,5 @@
 import { toggleButton } from '../utils/toggle.js';
 
-export const editPageTitle = function(pageTitleData, resumeConfiguration){
+export const setPageConfiguration = function(pageTitleData, resumeConfiguration){
    document.title = pageTitleData.trim();
 };
