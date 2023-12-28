@@ -57,7 +57,7 @@ header {
 .header {
    display: flex;
    flex-direction: row;
-   padding: 10px 0 10px 0;
+   padding: 0 0 10px 0;
 }
 
 .box::before {
