@@ -195,7 +195,7 @@ export const resume = {
          "Software Development",
          "RESTful Services",
          "System Administration",
-         "Object Oriented Paradigm ",
+         "Object Oriented Paradigm",
          "DevOps",
          "Database Systems",
          "Agile Methodologies",
@@ -300,7 +300,7 @@ export const resume = {
             "iconName": "interest_chess.png"
          },
          {
-            "name": "Chess",
+            "name": "Basketball",
             "iconName": "interest_basketball.png"
          },
          {
