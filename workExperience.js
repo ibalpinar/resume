@@ -1,2 +1,0 @@
-let generateWorkExperience = function(workExperienceData){
-};

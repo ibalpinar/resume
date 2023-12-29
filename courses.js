@@ -1,2 +1,0 @@
-let generateCourses = function(coursesData){
-};

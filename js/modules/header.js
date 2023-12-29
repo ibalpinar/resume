@@ -1,4 +1,4 @@
-let generateContactDiv = function(contactData, iconName){
+const generateContactDiv = function(contactData, iconName){
    const contact = document.createElement("div");
    contact.classList.add("contact");
 
@@ -11,7 +11,7 @@ let generateContactDiv = function(contactData, iconName){
    icon.classList.add("icon");
 
    const iconImage = document.createElement("img");
-   iconImage.src = `images/${iconName}.png`;
+   iconImage.src = `./images/${iconName}.png`;
    iconImage.classList.add(`icon_${iconName}`);
    icon.insertAdjacentElement("beforeend", iconImage);
    contact.insertAdjacentElement("beforeend", icon);
@@ -19,7 +19,7 @@ let generateContactDiv = function(contactData, iconName){
    return contact;
 };
 
-let generateHeader = function(headerData){
+export const generateHeader = function(headerData, resumeConfiguration){
    const headerElement = document.querySelector(".header");
 
    //Header Left Start
@@ -59,7 +59,6 @@ let generateHeader = function(headerData){
    const headerImage = document.createElement("img");
    headerImage.src = `images/${headerData.photograph}`;
    headerPhotograph.insertAdjacentElement("beforeend", headerImage);
-
    //Header Middle End
 
    //Header Right Start
