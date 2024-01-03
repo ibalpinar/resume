@@ -6,6 +6,8 @@ import { generateSkills } from './modules/skills.js';
 import { generateEducation } from './modules/education.js';
 import { generateCourses } from './modules/courses.js';
 import { generateInterests } from './modules/interests.js';
+import { parseUri } from './utils.js';
+import { referrer } from './utils.js';
 
 setPageConfiguration(resume.data.header.fullName, resume.configuration);
 generateHeader(resume.data.header, resume.configuration);

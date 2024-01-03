@@ -1,4 +1,4 @@
-import { toggleButton } from '../utils/toggle.js';
+import { toggleButton } from '../utils.js';
 
 export const setPageConfiguration = function(pageTitleData, resumeConfiguration){
    document.title = pageTitleData.trim();
