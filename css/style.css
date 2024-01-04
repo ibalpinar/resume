@@ -13,10 +13,6 @@ body {
    margin: 0 auto;
 }
 
-.dotted {
-   border: 1px dotted;
-}
-
 .resume_container{
    border: 0px solid rgb(151, 151, 151);
    background-color: rgb(255, 255, 255);
@@ -24,6 +20,28 @@ body {
    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
    box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
    margin: 5px 0 20px 0;
+}
+
+.menu_container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 10px 25px 0 0;
+   text-align: right;
+}
+
+.menu_container .back_link{
+   padding: 2px 0 0 10px;
+}
+
+.menu_container .back_link a{
+   text-decoration: none;
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.menu_container .back_link a:hover{
+   text-decoration:underline;
 }
 
 header {
@@ -149,7 +167,6 @@ header {
    height: 30px;
    vertical-align: middle;
    text-align: center;
-   border: 0px dotted;
    margin-right: 20px;
 }
 
