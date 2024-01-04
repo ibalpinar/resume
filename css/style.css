@@ -26,6 +26,27 @@ body {
    margin: 5px 0 20px 0;
 }
 
+.menu_container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 10px 25px 0 0;
+   text-align: right;
+}
+
+.menu_container .back_link{
+   padding: 2px 0 0 10px;
+}
+
+.menu_container .back_link a{
+   text-decoration: none;
+   font-size: 12px;
+}
+
+.menu_container .back_link a:hover{
+   text-decoration:underline;
+}
+
 header {
    border: 0px solid black;
    width: 800px;
