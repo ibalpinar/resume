@@ -41,6 +41,7 @@ body {
 .menu_container .back_link a{
    text-decoration: none;
    font-size: 12px;
+   font-weight: bold;
 }
 
 .menu_container .back_link a:hover{
