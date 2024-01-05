@@ -26,7 +26,7 @@ export const parseUri = (str) => {
 
 parseUri.options = {
 	strictMode: false,
-	key: ["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor","referrer"],
+	key: ["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"],
 	q:   {
 		name:   "queryKey",
 		parser: /(?:^|&)([^&=]*)=?([^&]*)/g
