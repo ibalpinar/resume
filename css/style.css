@@ -385,8 +385,8 @@ header {
 }
 
 .back_button {
- background-image: linear-gradient(#42A1EC, #0070C9);
- border: 1px solid #0077CC;
+ background-image: linear-gradient(#d8aa48, #cc8b00);
+ border: 1px solid #cc8b00;
  border-radius: 4px;
  box-sizing: border-box;
  color: #FFFFFF;
@@ -394,13 +394,8 @@ header {
  direction: ltr;
  display: block;
  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
- font-size: 17px;
- font-weight: 400;
- letter-spacing: -.022em;
- line-height: 1.47059;
- min-width: 50px;
  overflow: visible;
- padding: 4px 15px;
+ padding: 4px 10px;
  text-align: center;
  user-select: none;
  -webkit-user-select: none;
@@ -414,19 +409,19 @@ header {
 }
 
 .back_button:hover {
- background-image: linear-gradient(#51A9EE, #147BCD);
- border-color: #1482D0;
+ background-image: linear-gradient(#d38e4d, #cc6300);
+ border-color: #cc7c31;
  text-decoration: none;
 }
 
 .back_button:active {
- background-image: linear-gradient(#3D94D9, #0067B9);
- border-color: #006DBC;
+ background-image: linear-gradient(#94680a, #986902);
+ border-color: #bd7903;
  outline: none;
 }
 
 .back_button:focus {
- box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+ box-shadow: rgba(252, 159, 28, 0.5) 0 0 0 3px;
  outline: none;
 }
-/* End of Back Button Style */
+/* End of Back Button Style*/
