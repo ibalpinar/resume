@@ -30,17 +30,17 @@ body {
    text-align: right;
 }
 
-.menu_container .back_link{
+.menu_container .back_button_container{
    padding: 2px 0 0 10px;
 }
 
-.menu_container .back_link a{
+.menu_container .back_button_container a{
    text-decoration: none;
    font-size: 12px;
    font-weight: bold;
 }
 
-.menu_container .back_link a:hover{
+.menu_container .back_button_container a:hover{
    text-decoration:underline;
 }
 
