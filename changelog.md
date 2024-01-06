@@ -5,6 +5,7 @@
 ## 1.1.2 (07 Jan 2024)
 * Added Dark / Light Mode switch upper right corner of the resume.
 * Added formatted changelog.
+* Added version and current year to the footer section at the bottom of the page.
 
 ## 1.1.1 (28 Dec 2023)
 * Added Dark / Light Mode switch upper right corner of the resume.
