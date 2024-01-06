@@ -1,12 +1,13 @@
-# resume
+# Resume - Ilker Balpinar
 
 This is a resume that I prepared for myself. To be honest, I saw a one-page resume of Elon Musk years ago, and I was completely inspired by him.
 
 You can take the skeleton of this resume and prepare your own.
 
-By the way, I decided that this resume outline can be modified by everyone for themselves. In this way, people will be able to create their resumes without paying.
+By the way, I decided that this resume outline can be modified by everyone for themselves. In this way, people will be able to create their resumes without paying. When I finish my work in this repository, I will start the ResumeX project and create a completely free and open-source platform where everyone can create their own resume.
 
-New visual designs will be added step by step to this draft.
+In this way, you will be able to contribute to the project and also have a resume that is always up to date and accessible online.
+
 
 [![GitHub Streak](https://streak-stats.demolab.com/?user=ibalpinar&theme=dark)](https://git.io/streak-stats)
 
