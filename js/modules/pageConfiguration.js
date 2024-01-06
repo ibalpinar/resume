@@ -22,5 +22,9 @@ export const setPageConfiguration = function(pageTitleData, resumeConfiguration)
    darkmodeToggleContainer.insertAdjacentElement("afterbegin", toggleButtonElement);
 
    menuContainer.insertAdjacentElement("beforeend", darkmodeToggleContainer);
-
+   let year = new Date().getFullYear();
+   const footerElement = document.createElement("div");
+   footerElement.classList.add("footer");
+   footerElement.textContent = `v${resumeConfiguration.version} @${year}`;
+   resumeContainer.insertAdjacentElement("beforeend", footerElement);
 };
