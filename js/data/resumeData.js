@@ -6,7 +6,8 @@ export const resume = {
       "skillsTitle": "Skills",
       "educationTitle": "Education",
       "coursesTitle": "Courses",
-      "interestsTitle": "Interests"
+      "interestsTitle": "Interests",
+      "version": "v1.1.0"
 },
    "data":{
       "header": {
