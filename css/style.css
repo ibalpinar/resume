@@ -45,7 +45,6 @@ body {
 }
 
 header {
-   border: 0px solid black;
    width: 800px;
 }
 
@@ -364,4 +363,11 @@ header {
    font-size: 13px;
    margin: 4px 0 0 5px;
 }
+
+.footer{
+   font-size: 11px;
+   text-align: center;
+}
 /* End of default light mode configuration */
+
+
