@@ -369,6 +369,12 @@ header {
    text-align: center;
    margin-bottom: 5px;
 }
+
+.version{
+   text-decoration: none;
+}
+
+.version:hover{
+   text-decoration: underline;
+}
 /* End of default light mode configuration */
-
-
