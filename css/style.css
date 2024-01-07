@@ -2,7 +2,6 @@ html {
    height: 100%;
 }
 
-/* Start of default light mode configuration */
 body {
    display: flex;
    flex-direction: column;
@@ -13,6 +12,7 @@ body {
    margin: 0 auto;
 }
 
+/* Start of default light mode */
 .resume_container{
    border: 0px solid rgb(151, 151, 151);
    background-color: rgb(255, 255, 255);
@@ -51,7 +51,6 @@ header {
 .main {
    flex-grow: 1;
    display: flex;
-   background: #ffffff;
    border-top: 2px solid black;
    width: 800px;
    padding: 0 0 10px 0;
@@ -60,14 +59,12 @@ header {
 .main .work {
    display: flex;
    flex-direction: column;
-   background: #ffffff;
    padding: 0 20px 0 0;
 }
 
 .others{
    display: flex;
    flex-direction: column;
-   background: #ffffff;
    width: 300px;
 }
 
@@ -378,4 +375,4 @@ header {
 .version:hover{
    text-decoration: underline;
 }
-/* End of default light mode configuration */
+/* End of default light mode */
