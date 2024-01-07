@@ -1,7 +1,7 @@
-import { elementFromHtml } from '../utils.js';
-import { backButton } from '../utils.js';
-import { toggleButton } from '../utils.js';
-import { referrer } from '../utils.js';
+import { elementFromHtml } from './utils.js';
+import { backButton } from './utils.js';
+import { toggleButton } from './utils.js';
+import { referrer } from './utils.js';
 
 export const setPageConfiguration = function(pageTitleData, resumeConfiguration){
    document.title = pageTitleData.trim();

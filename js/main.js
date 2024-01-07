@@ -1,5 +1,5 @@
 import { resume } from './data/resumeData.js';
-import { setPageConfiguration } from './modules/pageConfiguration.js';
+import { setPageConfiguration } from './pageConfig.js';
 import { generateHeader } from './modules/header.js';
 import { generateWorkExperience } from './modules/workExperience.js';
 import { generateSkills } from './modules/skills.js';
