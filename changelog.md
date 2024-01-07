@@ -2,6 +2,9 @@
 
 # Changelog
 
+## 1.1.3 (08 Jan 2024)
+* Added a link to the version to access the changelog history
+
 ## 1.1.2 (07 Jan 2024)
 * Added Dark / Light Mode switch upper right corner of the resume.
 * Added formatted changelog.
