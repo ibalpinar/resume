@@ -12,7 +12,9 @@ export const setPageConfiguration = function(pageTitleData, resumeConfiguration)
    resumeContainer.insertAdjacentElement("afterbegin", menuContainer);
 
    let backButtonElement = elementFromHtml(backButton);
-   backButtonElement.style.visibility = (referrer == "")?'hidden':'';
+   // console.log("referrer -> " + referrer);
+   // console.log("document.location -> " + document.location);
+   backButtonElement.style.visibility = (referrer == "" || referrer == document.location)?'hidden':'';
    backButtonElement.onclick = function(){document.location=referrer};
    menuContainer.insertAdjacentElement("afterbegin", backButtonElement);
 
@@ -25,6 +27,6 @@ export const setPageConfiguration = function(pageTitleData, resumeConfiguration)
    let year = new Date().getFullYear();
    const footerElement = document.createElement("div");
    footerElement.classList.add("footer");
-   footerElement.textContent = `v${resumeConfiguration.version} @${year}`;
+   footerElement.innerHTML = `<a href="./changelog.md" class="version" target="_blank" >v${resumeConfiguration.version}</a> @${year}`;
    resumeContainer.insertAdjacentElement("beforeend", footerElement);
 };
