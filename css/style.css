@@ -2,7 +2,6 @@ html {
    height: 100%;
 }
 
-/* Start of default light mode configuration */
 body {
    display: flex;
    flex-direction: column;
@@ -13,8 +12,8 @@ body {
    margin: 0 auto;
 }
 
+/* Start of default light mode */
 .resume_container{
-   border: 0px solid rgb(151, 151, 151);
    background-color: rgb(255, 255, 255);
    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
@@ -51,7 +50,6 @@ header {
 .main {
    flex-grow: 1;
    display: flex;
-   background: #ffffff;
    border-top: 2px solid black;
    width: 800px;
    padding: 0 0 10px 0;
@@ -60,14 +58,12 @@ header {
 .main .work {
    display: flex;
    flex-direction: column;
-   background: #ffffff;
    padding: 0 20px 0 0;
 }
 
 .others{
    display: flex;
    flex-direction: column;
-   background: #ffffff;
    width: 300px;
 }
 
@@ -80,7 +76,7 @@ header {
 .box::before {
    display: flex;
    width: 35px;
-   height: 50px;
+   height: 55px;
    margin: 25px 10px 0 0;
    content: ' ';
 }
@@ -152,7 +148,6 @@ header {
 
 .header .right .contact .info {
    text-align: right;
-   border: 0px solid;
    font-size: 12px;
    width: 235px;
    height: 30px;
@@ -160,7 +155,6 @@ header {
 }
 
 .header .right .contact .icon {
-   border: 0px solid;
    font-size: 13px;
    width: 25px;
    height: 30px;
@@ -369,6 +363,147 @@ header {
    text-align: center;
    margin-bottom: 5px;
 }
-/* End of default light mode configuration */
+
+.version{
+   color: #000000;
+   text-decoration: none;
+}
+
+.version:hover{
+   text-decoration: underline;
+}
+/* End of default light mode */
 
 
+/* Start of default dark mode */
+.dark{
+   background-color: rgb(33, 52, 73);
+}
+
+.dark .resume_container{
+   background-color: #212030;
+   -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
+   -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
+   box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
+   margin: 5px 0 20px 0;
+}
+
+.dark .resume_container .main {
+   border-top: 2px solid #de7728;;
+}
+
+.dark .resume_container .header .left .full_name {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .header .left .title {
+   color: #de7728;
+}
+
+.dark .resume_container .header .left .objective {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .header .right {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .header .middle .photograph {
+   border: 7px solid #f16e09;
+}
+
+.dark .resume_container .header .box::before {
+   background-color: #11101c;
+}
+
+.dark .resume_container .main .work .title {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .work .container .box::before {
+   background-color: #96480d;
+}
+
+.dark .resume_container .main .work .container .experience .position{
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .work .container .experience .company{
+   color: #9b9b9b;
+}
+.dark .resume_container .main .work .container .experience .duration_location{
+   color: #de7728;
+}
+
+.dark .resume_container .main .work .container .experience .accomplishments .title{
+   color: #de7728;
+}
+
+.dark .resume_container .main .work .container .experience .accomplishments ul{
+   color: #de7728;
+}
+
+.dark .resume_container .main .work .container .experience .accomplishments ul li div{
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .skills .title {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .skills .container .skill {
+   background: #9b9b9b;
+   color: #212030;
+}
+
+.dark .resume_container .main .others .education .title {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .education .school .name {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .education .school .department {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .education .school .location {
+   color: #de7728;
+}
+
+.dark .resume_container .main .others .courses .title {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .courses .container .name {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .courses .container .company {
+   color: #646464;
+}
+
+.dark .resume_container .main .others .interests .title {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .main .others .interests .container .name {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .footer {
+   color: #9b9b9b;
+}
+
+.dark .resume_container .footer .version {
+   color: #9b9b9b;
+}
+
+/*
+  todo:
+    - contact icons
+    - intersts icons
+*/
+
+/* End of default dark mode */

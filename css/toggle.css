@@ -41,23 +41,23 @@ label svg {
 	z-index: 100;
 }
 
-label svg.light {
+label svg.light_mode {
 	left:4px;
 	fill:#fff;
 	transition: 0.3s;
 }
 
-label svg.dark {
+label svg.dark_mode {
 	left:34px;
 	fill:#7e7e7e;
 	transition: 0.3s;
 }
 
-input:checked + label svg.light {
+input:checked + label svg.light_mode {
 	fill:#7e7e7e;
 }
 
-input:checked + label svg.dark {
+input:checked + label svg.dark_mode {
 	fill:#fff;
 }
 
