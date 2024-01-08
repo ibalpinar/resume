@@ -12,21 +12,26 @@ export const setPageConfiguration = function(pageTitleData, resumeConfiguration)
    resumeContainer.insertAdjacentElement("afterbegin", menuContainer);
 
    let backButtonElement = elementFromHtml(backButton);
-   // console.log("referrer -> " + referrer);
-   // console.log("document.location -> " + document.location);
    backButtonElement.style.visibility = (referrer == "" || referrer == document.location)?'hidden':'';
    backButtonElement.onclick = function(){document.location=referrer};
    menuContainer.insertAdjacentElement("afterbegin", backButtonElement);
 
-   const darkmodeToggleContainer = document.createElement("div");
-   darkmodeToggleContainer.classList.add("darkmode_toggle_container");
    let toggleButtonElement = elementFromHtml(toggleButton);
-   darkmodeToggleContainer.insertAdjacentElement("afterbegin", toggleButtonElement);
+   menuContainer.insertAdjacentElement("beforeend", toggleButtonElement);
+   toggleButtonElement.lastElementChild.addEventListener("click", function(){ darkModeToggle();});
 
-   menuContainer.insertAdjacentElement("beforeend", darkmodeToggleContainer);
    let year = new Date().getFullYear();
    const footerElement = document.createElement("div");
    footerElement.classList.add("footer");
    footerElement.innerHTML = `<a href="./changelog.md" class="version" target="_blank" >v${resumeConfiguration.version}</a> @${year}`;
    resumeContainer.insertAdjacentElement("beforeend", footerElement);
+
+
+};
+
+const darkModeToggle = function(){
+   // let darkModeCheckbox = document.querySelector("#darkmode_toggle");
+   // if(darkModeCheckbox.checked){}
+   let bodyElement = document.body;
+   bodyElement.classList.toggle("dark");
 };
