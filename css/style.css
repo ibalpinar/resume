@@ -1,33 +1,37 @@
 :root {
-   /* Start of light and dark mode color*/
-   --light_background: #acacac;
-   --light_background_resume_container: #ffffff;
-   --light_background_seperator: #000000;
-   --light_text_general: #000000;
-   --light_text_header_title: #ff0000;
-   --light_background_photograph: #ff0000;
-   --light_text_sub_topic: #ff0000;
-   --light_icons: #000000;
-   --light_background_box_header: #2b343d;
-   --light_background_box_company: #ff0000;
-   --light_text_skill: #ffffff;
-   --light_background_skill: #2b343d;
-   --light_text_course_company: #9b9b9b;
+   --general_font: Verdana;
+}
 
-   --dark_background: #213449;
-   --dark_background_resume_container: #212030;
-   --dark_background_seperator: #de7728;
-   --dark_text_general: #9b9b9b;
-   --dark_text_header_title: #de7728;
-   --dark_background_photograph: #de7728;
-   --dark_text_sub_topic: #de7728;
-   --dark_icons: #9b9b9b;
-   --dark_background_box_header: #11101c;
-   --dark_background_box_company: #96480d;
-   --dark_text_skill: #212030;
-   --dark_background_skill: #9b9b9b;
-   --dark_text_course_company: #646464;
-   /* End of light and dark mode color*/
+[theme="light"] {
+   --background_color: #acacac;
+   --background_color_resume_container: #ffffff;
+   --background_color_seperator: #000000;
+   --text_general: #000000;
+   --text_header_title: #ff0000;
+   --background_color_photograph: #ff0000;
+   --text_sub_topic: #ff0000;
+   --icons: #000000;
+   --background_color_box_header: #2b343d;
+   --background_color_box_company: #ff0000;
+   --text_skill: #ffffff;
+   --background_color_skill: #2b343d;
+   --text_course_company: #9b9b9b;
+}
+
+[theme="dark"] {
+   --background_color: #213449;
+   --background_color_resume_container: #212030;
+   --background_color_seperator: #de7728;
+   --text_general: #9b9b9b;
+   --text_header_title: #de7728;
+   --background_color_photograph: #de7728;
+   --text_sub_topic: #de7728;
+   --icons: #9b9b9b;
+   --background_color_box_header: #11101c;
+   --background_color_box_company: #96480d;
+   --text_skill: #212030;
+   --background_color_skill: #9b9b9b;
+   --text_course_company: #646464;
 }
 
 html {
@@ -39,14 +43,14 @@ body {
    flex-direction: column;
    padding: 0;
    place-items: center;
-   background-color: var(--light_background);
-   font: 15px Verdana;
+   background-color: var(--background_color);
+   font-family: var(--general_font);
    margin: 0 auto;
 }
 
 /* Start of default light mode */
 .resume_container{
-   background-color: var(--light_background_resume_container);
+   background-color: var(--background_color_resume_container);
    -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
    -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
    box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
@@ -82,7 +86,7 @@ header {
 .main {
    flex-grow: 1;
    display: flex;
-   border-top: 2px solid var(--light_background_seperator);
+   border-top: 2px solid var(--background_color_seperator);
    width: 800px;
    padding: 0 0 10px 0;
 }
@@ -114,11 +118,11 @@ header {
 }
 
 .header .box::before {
-   background-color: var(--light_background_box_header);
+   background-color: var(--background_color_box_header);
 }
 
 .main .work .container .box::before {
-   background-color: var(--light_background_box_company);
+   background-color: var(--background_color_box_company);
 }
 
 .header .left {
@@ -130,19 +134,19 @@ header {
 }
 
 .header .left .full_name {
-   color: var(--light_text_general);
+   color: var(--text_general);
    font-size: 30px;
    margin-top: 20px;
 }
 
 .header .left .title {
-   color: var(--light_text_header_title);
+   color: var(--text_header_title);
    font-size: 15px;
    margin-top: 1px;
 }
 
 .header .left .objective {
-   color: var(--light_text_general);
+   color: var(--text_general);
    font-size: 12px;
    margin-top: 7px;
 }
@@ -157,7 +161,7 @@ header {
    display: flex;
    border-radius: 100%;
    overflow: hidden;
-   border: 7px solid var(--light_background_photograph);
+   border: 7px solid var(--background_color_photograph);
    margin: 15px 0 0 0;
 }
 
@@ -181,7 +185,7 @@ header {
 }
 
 .header .right .contact .info {
-   color: var(--light_text_general);
+   color: var(--text_general);
    text-align: right;
    font-size: 12px;
    width: 235px;
@@ -199,27 +203,27 @@ header {
 }
 
 .header .right .contact .icon .icon_email {
-   fill: var(--light_icons);
+   fill: var(--icons);
    width: 22px;
 }
 
 .header .right .contact .icon .icon_mobile {
-   fill: var(--light_icons);
+   fill: var(--icons);
    width: 12px;
 }
 
 .header .right .contact .icon .icon_location {
-   fill: var(--light_icons);
+   fill: var(--icons);
    width: 15px;
 }
 
 .header .right .contact .icon .icon_linkedin {
-   fill: var(--light_icons);
+   fill: var(--icons);
    width: 18px;
 }
 
 .main .work .title {
-   color: var(--light_text_general);
+   color: var(--text_general);
    margin: 15px 0 10px 43px;
 }
 
@@ -243,12 +247,12 @@ header {
 }
 
 .main .work .container .experience .position{
-   color: var(--light_text_general);
+   color: var(--text_general);
    margin: 0;
 }
 
 .main .work .container .experience .company{
-   color: var(--light_text_general);
+   color: var(--text_general);
    font-weight:100;
    margin: 5px 0 0 0;
 }
@@ -259,7 +263,7 @@ header {
    justify-content: space-between;
    font-size: 12px;
    font-style: italic;
-   color: var(--light_text_sub_topic);
+   color: var(--text_sub_topic);
    margin: 7px 10px 5px 0;
    width: 430px;
    font-weight:100;
@@ -272,26 +276,26 @@ header {
 .main .work .container .experience .accomplishments .title{
    font-size: 12px;
    font-style: italic;
-   color: var(--light_text_sub_topic);
+   color: var(--text_sub_topic);
    margin: 0 0 0 0;
    font-weight:100;
 }
 
 .main .work .container .experience .accomplishments ul{
-   color: var(--light_text_sub_topic);
+   color: var(--text_sub_topic);
    margin: 0 0 0 0;
    padding: 0 0 0 25px;
 }
 
 .main .work .container .experience .accomplishments ul li div{
    font-size: 11px;
-   color: var(--light_text_general);
+   color: var(--text_general);
    margin: 4px 0 0 0;
    padding: 0 0 0 0;
 }
 
 .main .others .skills .title {
-   color: var(--light_text_general);
+   color: var(--text_general);
    margin: 15px 0 0 0;
 }
 .main .others .skills .container {
@@ -306,10 +310,10 @@ header {
 
 .main .others .skills .container .skill {
    display: flex;
-   font: 11px Verdana;
+   font-size: 11px;
    border-radius: 6px;
-   background: var(--light_background_skill);
-   color: var(--light_text_skill);
+   background: var(--background_color_skill);
+   color: var(--text_skill);
    padding: 5px 10px 5px 10px;
    white-space: nowrap;
    margin: 3px;
@@ -321,7 +325,7 @@ header {
 }
 
 .main .others .education .title {
-   color: var(--light_text_general);
+   color: var(--text_general);
    margin: 15px 0 10px 0;
 }
 
@@ -330,13 +334,13 @@ header {
 }
 
 .main .others .education .school .name {
-   color: var(--light_text_general);
+   color: var(--text_general);
    font-weight: bold;
    font-size: 14px;
 }
 
 .main .others .education .school .department {
-   color: var(--light_text_general);
+   color: var(--text_general);
    font-size: 14px;
    margin: 5px 0 0 0;
 }
@@ -344,7 +348,7 @@ header {
 .main .others .education .school .location {
    font-size: 12px;
    font-style: italic;
-   color: var(--light_text_sub_topic);
+   color: var(--text_sub_topic);
    margin: 3px 0 0 0;
 }
 
@@ -355,7 +359,7 @@ header {
 }
 
 .main .others .courses .title {
-   color: var(--light_text_general);
+   color: var(--text_general);
    margin: 15px 0 10px 0;
    font-weight: bold;
    font-size: 17px;
@@ -366,14 +370,14 @@ header {
 }
 
 .main .others .courses .container .name {
-   color: var(--light_text_general);
+   color: var(--text_general);
    font-size: 13px;
 }
 
 .main .others .courses .container .company {
    font-size: 12px;
    font-style: italic;
-   color: var(--light_text_course_company);
+   color: var(--text_course_company);
    margin: 3px 0 0 0;
 }
 
@@ -384,7 +388,7 @@ header {
 }
 
 .main .others .interests .title {
-   color: var(--light_text_general);
+   color: var(--text_general);
    margin: 15px 0 10px 0;
 }
 
@@ -397,27 +401,27 @@ header {
 }
 
 .main .others .interests .container .icon svg {
-   fill: var(--light_icons);
+   fill: var(--icons);
    width: 23px;
    height: 23px;
 }
 
 .main .others .interests .container .name {
-   color: var(--light_text_general);
+   color: var(--text_general);
    float: left;
    font-size: 13px;
    margin: 4px 0 0 10px;
 }
 
 .footer{
-   color: var(--light_text_general);
+   color: var(--text_general);
    font-size: 11px;
    text-align: center;
    margin-bottom: 5px;
 }
 
 .version{
-   color: var(--light_text_general);
+   color: var(--text_general);
    text-decoration: none;
 }
 
@@ -451,7 +455,6 @@ header {
  cursor: pointer;
  direction: ltr;
  display: block;
- font-family: Verdana;
  overflow: visible;
  padding: 4px 10px;
  text-align: center;
@@ -554,148 +557,3 @@ input:checked + label:after {
 	background: linear-gradient(180deg,#777,#3a3a3a);
 }
 /* End of toggle button*/
-
-/* Start of default dark mode */
-.dark{
-   background-color: var(--dark_background);
-}
-
-.dark .resume_container{
-   background-color: var(--dark_background_resume_container);
-   -webkit-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
-   -moz-box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
-   box-shadow: 0px 2px 4px 3px rgba(0,0,0,0.50);
-}
-
-.dark .resume_container .main {
-   border-top: 2px solid var(--dark_background_seperator);
-}
-
-.dark .resume_container .header .left .full_name {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .header .left .title {
-   color: var(--dark_text_header_title);
-}
-
-.dark .resume_container .header .left .objective {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .header .middle .photograph {
-   border: 7px solid var(--dark_background_photograph);
-}
-
-.dark .resume_container .header .right .contact .info {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .header .right .contact .icon .icon_email {
-   fill: var(--dark_icons);
-}
-
-.dark .resume_container .header .right .contact .icon .icon_mobile {
-   fill: var(--dark_icons);
-}
-
-.dark .resume_container .header .right .contact .icon .icon_location {
-   fill: var(--dark_icons);
-}
-
-.dark .resume_container .header .right .contact .icon .icon_linkedin {
-   fill: var(--dark_icons);
-}
-
-.dark .resume_container .header .box::before {
-   background-color: var(--dark_background_box_header);
-}
-
-.dark .resume_container .main .work .title {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .work .container .box::before {
-   background-color: var(--dark_background_box_company);
-}
-
-.dark .resume_container .main .work .container .experience .position{
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .work .container .experience .company{
-   color: var(--dark_text_general);
-}
-.dark .resume_container .main .work .container .experience .duration_location{
-   color: var(--dark_text_sub_topic);
-}
-
-.dark .resume_container .main .work .container .experience .accomplishments .title{
-   color: var(--dark_text_sub_topic);
-}
-
-.dark .resume_container .main .work .container .experience .accomplishments ul{
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .work .container .experience .accomplishments ul li div{
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .skills .title {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .skills .container .skill {
-   background: var(--dark_background_skill);
-   color: var(--dark_text_skill);
-}
-
-.dark .resume_container .main .others .education .title {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .education .school .name {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .education .school .department {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .education .school .location {
-   color: var(--dark_text_sub_topic);
-}
-
-.dark .resume_container .main .others .courses .title {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .courses .container .name {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .courses .container .company {
-   color: var(--dark_text_course_company);
-}
-
-.dark .resume_container .main .others .interests .title {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .interests .container .name {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .main .others .interests .container .icon svg {
-   fill: var(--dark_icons);
-}
-
-.dark .resume_container .footer {
-   color: var(--dark_text_general);
-}
-
-.dark .resume_container .footer .version {
-   color: var(--dark_text_general);
-}
-/* End of default dark mode */
