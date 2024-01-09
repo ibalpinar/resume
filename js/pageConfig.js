@@ -2,6 +2,10 @@ import { elementFromHtml } from './utils.js';
 import { backButton } from './utils.js';
 import { toggleButton } from './utils.js';
 import { referrer } from './utils.js';
+import { LIGHT_MODE } from './utils.js';
+import { DARK_MODE } from './utils.js';
+import { setThemeMode } from './utils.js';
+import { getThemeMode } from './utils.js';
 
 export const setPageConfiguration = function(pageTitleData, resumeConfiguration){
    document.title = pageTitleData.trim();
@@ -28,8 +32,9 @@ export const setPageConfiguration = function(pageTitleData, resumeConfiguration)
 };
 
 const darkModeToggle = function(){
-   // let darkModeCheckbox = document.querySelector("#darkmode_toggle");
-   // if(darkModeCheckbox.checked){}
-   let bodyElement = document.body;
-   bodyElement.classList.toggle("dark");
+   if(getThemeMode() == LIGHT_MODE){
+      setThemeMode(DARK_MODE);
+   }else{
+      setThemeMode(LIGHT_MODE);
+   }
 };

@@ -37,6 +37,42 @@ parseUri.options = {
 	}
 };
 
+export const LIGHT_MODE = "light"
+export const DARK_MODE = "dark"
+const resumeBody = document.body;
+
+/**
+ * This function sets the theme status. If the application
+ * starts from scratch sets the default value as LIGHT_MODE
+ * otherwise sets what the current value is.
+*/
+export const setThemeMode = function(mode){
+   if(mode == null || mode == undefined || mode.trim() == ""){
+      localStorage.setItem("theme", getThemeMode());
+      resumeBody.setAttribute("theme", getThemeMode());
+      if(getThemeMode() == DARK_MODE){
+         const darkModeToggleElement = document.querySelector("#dark_mode_toggle");
+         darkModeToggleElement.checked = true;
+      }
+   }else{
+      localStorage.setItem("theme", mode);
+      resumeBody.setAttribute("theme", mode);
+   }
+};
+
+/**
+ * This function gets the curent theme value. If the local
+ * storage is empty or null returns and sets LIGHT_MODE.
+*/
+export const getThemeMode = function(){
+   if(localStorage.getItem("theme") == null || localStorage.getItem("theme") == undefined || localStorage.getItem("theme").trim() == ""){
+      setThemeMode(LIGHT_MODE);
+      return LIGHT_MODE;
+   }else{
+      return localStorage.getItem("theme");
+   }
+};
+
 // Warning: This function only returns the first element of the input html!
 export const elementFromHtml = (html) => {
    const template = document.createElement("template");
@@ -47,9 +83,9 @@ export const elementFromHtml = (html) => {
 export const referrer = document.referrer;
 
 export const toggleButton =
-   `<div class="darkmode_toggle_container">
-      <input type="checkbox" id="darkmode_toggle"/>
-      <label for="darkmode_toggle">
+   `<div class="dark_mode_toggle_container">
+      <input type="checkbox" id="dark_mode_toggle"/>
+      <label for="dark_mode_toggle" id="dark_mode_toggle_label">
          <svg version="1.1" class="light_mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve"></svg>
          <svg version="1.1" class="dark_mode" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49.739 49.739"  xml:space="preserve"></svg>
       </label>
@@ -62,7 +98,6 @@ export const backButton =
          <div class="text">Back</div>
       </button>
    </div>`;
-
 
 // Contact Icons
 export const email = `<svg class="icon_email" xmlns="http://www.w3.org/2000/svg" fill="#000000" viewBox="0 93.84 512 324.386" xmlns:v="https://vecta.io/nano"><path d="M496.327 127.091l-15.673 9.613L281.83 258.623c-7.983 4.859-16.917 7.293-25.84 7.293s-17.826-2.424-25.778-7.262l-.136-.084L31.347 134.771l-15.673-9.759L0 115.242v302.717h512V117.488l-15.673 9.603zM25.245 94.041l25.161 15.673 25.161 15.673 171.008 106.527a18.18 18.18 0 0 0 18.913-.042L439.14 125.386l25.558-15.673 25.558-15.673H25.245z"/></svg>`;
