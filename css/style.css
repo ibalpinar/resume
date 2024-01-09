@@ -164,7 +164,7 @@ header {
 }
 
 .header .right .contact .icon .icon_email {
-   width: 17px;
+   width: 22px;
 }
 
 .header .right .contact .icon .icon_mobile {
@@ -172,11 +172,11 @@ header {
 }
 
 .header .right .contact .icon .icon_location {
-   width: 12px;
+   width: 15px;
 }
 
 .header .right .contact .icon .icon_linkedin {
-   width: 15px;
+   width: 18px;
 }
 
 .main .work .title {
@@ -410,6 +410,22 @@ header {
 
 .dark .resume_container .header .middle .photograph {
    border: 7px solid #f16e09;
+}
+
+.dark .resume_container .header .right .contact .icon .icon_email {
+   fill: #9b9b9b;
+}
+
+.dark .resume_container .header .right .contact .icon .icon_mobile {
+   fill: #9b9b9b;
+}
+
+.dark .resume_container .header .right .contact .icon .icon_location {
+   fill: #9b9b9b;
+}
+
+.dark .resume_container .header .right .contact .icon .icon_linkedin {
+   fill: #9b9b9b;
 }
 
 .dark .resume_container .header .box::before {
