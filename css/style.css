@@ -189,6 +189,7 @@ header {
    font-size: 12px;
    width: 235px;
    height: 30px;
+   padding-right: 15px;
 }
 
 .header .right .contact .icon {
