@@ -1,5 +1,7 @@
 :root {
    /* Start of light and dark mode color*/
+   --general_font: Verdana;
+
    --light_background: #acacac;
    --light_background_resume_container: #ffffff;
    --light_background_seperator: #000000;
@@ -40,7 +42,7 @@ body {
    padding: 0;
    place-items: center;
    background-color: var(--light_background);
-   font: 15px Verdana;
+   font-family: var(--general_font);
    margin: 0 auto;
 }
 
@@ -306,7 +308,7 @@ header {
 
 .main .others .skills .container .skill {
    display: flex;
-   font: 11px Verdana;
+   font-size: 11px;
    border-radius: 6px;
    background: var(--light_background_skill);
    color: var(--light_text_skill);
@@ -451,7 +453,6 @@ header {
  cursor: pointer;
  direction: ltr;
  display: block;
- font-family: Verdana;
  overflow: visible;
  padding: 4px 10px;
  text-align: center;
