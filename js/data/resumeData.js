@@ -18,7 +18,8 @@ export const resume = {
          "email": "ilker[at]balpinar[dot]com",
          "mobile": "+90-533-***-****",
          "location": "Kadıköy, İstanbul, Turkey",
-         "linkedin": "https://www.linkedin/in/ibalpinar"
+         "linkedin": "https://www.linkedin/in/ibalpinar",
+         "github": "https://github.com/ibalpinar"
       },
       "workExperience": [
          {
