@@ -5,6 +5,7 @@ export const resume = {
       "accomplishmentsTitle": "Accomplishments",
       "skillsTitle": "Skills",
       "educationTitle": "Education",
+      "languagesTitle": "Languages",
       "coursesTitle": "Courses",
       "interestsTitle": "Interests",
       "version": "1.1.9"
@@ -224,6 +225,16 @@ export const resume = {
             "start": "",
             "end": "",
             "degree": ""
+         }
+      ],
+      "languages": [
+         {
+            "name": "Turkish",
+            "level": "Native"
+         },
+         {
+            "name": "English",
+            "level": "Professional working proficiency"
          }
       ],
       "courses": [

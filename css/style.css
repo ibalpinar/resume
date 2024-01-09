@@ -15,7 +15,9 @@
    --background_color_box_company: #ff0000;
    --text_skill: #ffffff;
    --background_color_skill: #2b343d;
+   --text_education_location: #9b9b9b;
    --text_course_company: #9b9b9b;
+   --text_language_level: #9b9b9b;
 }
 
 [theme="dark"] {
@@ -31,7 +33,9 @@
    --background_color_box_company: #96480d;
    --text_skill: #212030;
    --background_color_skill: #9b9b9b;
+   --text_education_location: #646464;
    --text_course_company: #646464;
+   --text_language_level: #646464;
 }
 
 html {
@@ -350,7 +354,38 @@ header {
 .main .others .education .school .location {
    font-size: 12px;
    font-style: italic;
-   color: var(--text_sub_topic);
+   color: var(--text_education_location);
+   margin: 3px 0 0 0;
+}
+
+
+------
+.main .others .languages {
+   display: flex;
+   flex-direction: column;
+   padding: 0 25px 0 0;
+}
+
+.main .others .languages .title {
+   color: var(--text_general);
+   margin: 15px 0 10px 0;
+   font-weight: bold;
+   font-size: 17px;
+}
+
+.main .others .languages .container {
+   margin: 0 0 10px 0;
+}
+
+.main .others .languages .container .name {
+   color: var(--text_general);
+   font-size: 13px;
+}
+
+.main .others .languages .container .level {
+   font-size: 12px;
+   font-style: italic;
+   color: var(--text_language_level);
    margin: 3px 0 0 0;
 }
 
