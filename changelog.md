@@ -2,13 +2,14 @@
 
 # Changelog
 
-## 1.1.8 (09 Jan 2024)
-* Replaced contact & interest icons with SVG versions instead of PNGs
-* Dark and light mode are fully parametricized in CSS
+## 1.1.9 (09 Jan 2024)
+* Replaced contact & interest icons with SVG versions instead of PNGs.
+* Dark and light mode are fully parametricized in CSS.
+* The dark mode value was saved to local storage and made operational from there.
 
 ## 1.1.4 (08 Jan 2024)
-* Added a link to the version to access the changelog history
-* Added full dark mode and integrated to the toggle
+* Added a link to the version to access the changelog history.
+* Added full dark mode and integrated to the toggle.
 
 ## 1.1.2 (07 Jan 2024)
 * Added Dark / Light Mode switch upper right corner of the resume.
