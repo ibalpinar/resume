@@ -1,3 +1,9 @@
+import { elementFromHtml } from '../utils.js';
+import { email } from '../utils.js';
+import { mobile } from '../utils.js';
+import { location } from '../utils.js';
+import { linkedin } from '../utils.js';
+
 const generateContactDiv = function(contactData, iconName){
    const contact = document.createElement("div");
    contact.classList.add("contact");
@@ -10,9 +16,12 @@ const generateContactDiv = function(contactData, iconName){
    const icon = document.createElement("div");
    icon.classList.add("icon");
 
-   const iconImage = document.createElement("img");
-   iconImage.src = `./images/${iconName}.png`;
-   iconImage.classList.add(`icon_${iconName}`);
+   /**
+    * The value of iconName is converted to variables
+    * (email, mobile, location, linkedin) imported with
+    * eval, and SVG icons in utils are used.
+   */
+   const iconImage = elementFromHtml(eval(iconName));
    icon.insertAdjacentElement("beforeend", iconImage);
    contact.insertAdjacentElement("beforeend", icon);
 
