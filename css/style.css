@@ -347,15 +347,25 @@ header {
    float: left;
 }
 
+.main .others .interests .container .icon {
+   float: left;
+}
+
+/*to be deleted*/
 .main .others .interests .container .icon img {
    width: 25px;
    height: 25px;
 }
 
+.main .others .interests .container .icon svg {
+   width: 23px;
+   height: 23px;
+}
+
 .main .others .interests .container .name {
    float: left;
    font-size: 13px;
-   margin: 4px 0 0 5px;
+   margin: 4px 0 0 10px;
 }
 
 .footer{
@@ -507,6 +517,11 @@ header {
 .dark .resume_container .main .others .interests .container .name {
    color: #9b9b9b;
 }
+
+.dark .resume_container .main .others .interests .container .icon svg {
+   fill: #9b9b9b;
+}
+
 
 .dark .resume_container .footer {
    color: #9b9b9b;
