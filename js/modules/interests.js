@@ -1,3 +1,13 @@
+import { elementFromHtml } from '../utils.js';
+import { photography } from '../utils.js';
+import { book } from '../utils.js';
+import { chess } from '../utils.js';
+import { basketball } from '../utils.js';
+import { swimming } from '../utils.js';
+import { travelling } from '../utils.js';
+import { science } from '../utils.js';
+import { cat } from '../utils.js';
+
 export const generateInterests = function(interestsData, resumeConfiguration){
    const othersAside = document.querySelector(".others");
 
@@ -20,8 +30,13 @@ export const generateInterests = function(interestsData, resumeConfiguration){
       interestIcon.classList.add("icon");
       interestContainer.insertAdjacentElement("beforeend", interestIcon);
 
-      const iconImage = document.createElement("img");
-      iconImage.src = `./images/${interest.iconName}`;
+      /**
+       * The value of iconName is converted to variables
+       * (email, mobile, location, linkedin) imported with
+       * eval, and SVG icons in utils are used.
+      */
+
+      const iconImage = elementFromHtml(eval(interest.iconName));
       interestIcon.insertAdjacentElement("beforeend", iconImage);
 
       const interestCompany = document.createElement("div");

@@ -25,8 +25,6 @@ export const setPageConfiguration = function(pageTitleData, resumeConfiguration)
    footerElement.classList.add("footer");
    footerElement.innerHTML = `<a href="./changelog.md" class="version" target="_blank" >v${resumeConfiguration.version}</a> @${year}`;
    resumeContainer.insertAdjacentElement("beforeend", footerElement);
-
-
 };
 
 const darkModeToggle = function(){

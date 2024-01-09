@@ -2,8 +2,9 @@
 
 # Changelog
 
-## 1.1.5 (09 Jan 2024)
-* Replaced contact icons with SVG versions instead of PNGs
+## 1.1.7 (09 Jan 2024)
+* Replaced contact & interest icons with SVG versions instead of PNGs
+* Dark and light mode are fully parametricized in CSS
 
 ## 1.1.4 (08 Jan 2024)
 * Added a link to the version to access the changelog history

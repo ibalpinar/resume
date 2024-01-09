@@ -7,7 +7,7 @@ export const resume = {
       "educationTitle": "Education",
       "coursesTitle": "Courses",
       "interestsTitle": "Interests",
-      "version": "1.1.5"
+      "version": "1.1.7"
 },
    "data":{
       "header": {
@@ -290,35 +290,35 @@ export const resume = {
       "interests": [
          {
             "name": "Photography",
-            "iconName": "interest_photography.png"
+            "iconName": "photography"
          },
          {
             "name": "Constant Reading",
-            "iconName": "interest_book.png"
+            "iconName": "book"
          },
          {
             "name": "Chess",
-            "iconName": "interest_chess.png"
+            "iconName": "chess"
          },
          {
             "name": "Basketball",
-            "iconName": "interest_basketball.png"
+            "iconName": "basketball"
          },
          {
             "name": "Swimming",
-            "iconName": "interest_swimming.png"
+            "iconName": "swimming"
          },
          {
             "name": "Travelling",
-            "iconName": "interest_travel.png"
+            "iconName": "travelling"
          },
          {
             "name": "Science & Technology",
-            "iconName": "interest_science_tech.png"
+            "iconName": "science"
          },
          {
             "name": "Cats",
-            "iconName": "interest_cat.png"
+            "iconName": "cat"
          }
       ]
    }
