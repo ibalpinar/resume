@@ -8,7 +8,7 @@ import { setThemeMode } from './utils.js';
 import { getThemeMode } from './utils.js';
 
 export const setPageConfiguration = function(pageTitleData, resumeConfiguration){
-   document.title = pageTitleData.trim();
+   document.title = pageTitleData.trim() + " | Resume";
 
    const resumeContainer = document.querySelector(".resume_container");
    const menuContainer = document.createElement("div");
