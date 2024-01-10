@@ -3,6 +3,7 @@ import { email } from '../utils.js';
 import { mobile } from '../utils.js';
 import { location } from '../utils.js';
 import { linkedin } from '../utils.js';
+import { github } from '../utils.js';
 
 const generateContactDiv = function(contactData, iconName){
    const contact = document.createElement("div");
@@ -79,5 +80,6 @@ export const generateHeader = function(headerData, resumeConfiguration){
    headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.mobile, "mobile"));
    headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.location, "location"));
    headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.linkedin, "linkedin"));
+   headerRightContainer.insertAdjacentElement("beforeend", generateContactDiv(headerData.github, "github"));
    //Header Right End
 };

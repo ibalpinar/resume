@@ -5,9 +5,10 @@ export const resume = {
       "accomplishmentsTitle": "Accomplishments",
       "skillsTitle": "Skills",
       "educationTitle": "Education",
+      "languagesTitle": "Languages",
       "coursesTitle": "Courses",
       "interestsTitle": "Interests",
-      "version": "1.1.9"
+      "version": "1.1.12"
 },
    "data":{
       "header": {
@@ -18,7 +19,8 @@ export const resume = {
          "email": "ilker[at]balpinar[dot]com",
          "mobile": "+90-533-***-****",
          "location": "Kadıköy, İstanbul, Turkey",
-         "linkedin": "https://www.linkedin/in/ibalpinar"
+         "linkedin": "https://www.linkedin/in/ibalpinar",
+         "github": "https://github.com/ibalpinar"
       },
       "workExperience": [
          {
@@ -223,6 +225,16 @@ export const resume = {
             "start": "",
             "end": "",
             "degree": ""
+         }
+      ],
+      "languages": [
+         {
+            "name": "Turkish",
+            "level": "Native"
+         },
+         {
+            "name": "English",
+            "level": "Professional working proficiency"
          }
       ],
       "courses": [

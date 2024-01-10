@@ -2,6 +2,11 @@
 
 # Changelog
 
+## 1.1.12 (10 Jan 2024)
+* Added the Github profile link and icon on the right side of the header.
+* Added language section on the right bar of the main section.
+* Fixed some visual problems and imporeved performance.
+
 ## 1.1.9 (09 Jan 2024)
 * Replaced contact & interest icons with SVG versions instead of PNGs.
 * Dark and light mode are fully parametricized in CSS.
