@@ -12,13 +12,13 @@ export const resume = {
 },
    "data":{
       "header": {
-         "fullName": "İlker Balpınar",
+         "fullName": "Ilker Balpinar",
          "title": "Director of Software Development",
          "objective": "My focus is scalable, high-traffic web and mobile applications. My goal is to manage and grow the technology department.",
          "photograph": "ilker-balpinar-fotograf-kare.jpg",
          "email": "ilker[at]balpinar[dot]com",
          "mobile": "+90-533-***-****",
-         "location": "Kadıköy, İstanbul, Turkey",
+         "location": "Kadikoy, Istanbul, Turkey",
          "linkedin": "https://www.linkedin/in/ibalpinar",
          "github": "https://github.com/ibalpinar"
       },
