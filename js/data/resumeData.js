@@ -43,7 +43,7 @@ export const resume = {
             "position": "Lead Engineer & Coordinator",
             "company": "OmmaWorks",
             "start": "01/2020",
-            "end": "08/2021",
+            "end": "09/2021",
             "location": "Istanbul, Turkey",
             "accomplishments": [
                "Led an Agile / Kanban software teams that organized the maintenance processes of web and digital signage applications.",
