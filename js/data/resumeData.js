@@ -26,7 +26,7 @@ export const resume = {
          {
             "position": "Director of Software Development",
             "company": "TurkNet İletişim Hizmetleri",
-            "start": "01/2022",
+            "start": "12/2021",
             "end": "Present",
             "location": "Istanbul, Turkey",
             "accomplishments": [
@@ -40,26 +40,10 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Development Manager",
-            "company": "Pubinno Inc.",
-            "start": "08/2021",
-            "end": "01/2022",
-            "location": "Istanbul, Turkey",
-            "accomplishments": [
-               "Hired new talents for the software development team.",
-               "Managed people, resources, and their performances.",
-               "Built Agile culture by using Scrum and Kanban with the all necessary rituals.",
-               "Re-designed all Project management processes on Jira.",
-               "Re-designed CI/CD pipeline.",
-               "Adapted the Agile culture throughout the company.",
-               "Completed the ongoing migration project to the new infrastructure."
-            ]
-         },
-         {
             "position": "Lead Engineer & Coordinator",
             "company": "OmmaWorks",
             "start": "01/2020",
-            "end": "07/2021",
+            "end": "08/2021",
             "location": "Istanbul, Turkey",
             "accomplishments": [
                "Led an Agile / Kanban software teams that organized the maintenance processes of web and digital signage applications.",
