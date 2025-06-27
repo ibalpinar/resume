@@ -2,6 +2,12 @@
 
 # Changelog
 
+## 1.2.0 (27 Jun 2025)
+* Added Download function.
+* Fixed some appearance issues.
+* Deleted unnecessary static page.
+* Fixed font problem on linux based browsers.
+
 ## 1.1.14 (10 Jan 2024)
 * Added the Github profile link and icon on the right side of the header.
 * Added language section on the right bar of the main section.
