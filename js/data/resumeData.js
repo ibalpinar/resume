@@ -25,9 +25,25 @@ export const resume = {
       "workExperience": [
          {
             "position": "Director of Software Development",
+            "company": "Ticimax",
+            "start": "08/2024",
+            "end": "05/2025",
+            "location": "Istanbul, Turkey",
+            "accomplishments": [
+               "Managing all product squads, software, and quality assurance teams with ~55 employees, with DevOps and Agile Culture.",
+               "Managing software and quality assurance team budget.",
+               "Working on digital transformation in the e-commerce sector under high traffic.",
+               "Re-developing monolith projects on new infrastructure.",
+               "Discovering and hiring new talents and managing their performance.",
+               "Managing high-traffic C# and Node.js web projects.",
+               "Developing and transforming Agile Culture."
+            ]
+         },
+         {
+            "position": "Director of Software Development",
             "company": "TurkNet İletişim Hizmetleri",
             "start": "12/2021",
-            "end": "Present",
+            "end": "08/2024",
             "location": "Istanbul, Turkey",
             "accomplishments": [
                "Leading 3 main domains, 10 software engineering teams, and a test engineering team with ~75 employees, with DevOps and Agile Culture.",
