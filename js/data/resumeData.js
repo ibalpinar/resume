@@ -25,9 +25,25 @@ export const resume = {
       "workExperience": [
          {
             "position": "Director of Software Development",
+            "company": "Ticimax",
+            "start": "08/2024",
+            "end": "05/2025",
+            "location": "Istanbul, Turkey",
+            "accomplishments": [
+               "Managing all product squads, software, and quality assurance teams with ~55 employees, with DevOps and Agile Culture.",
+               "Managing software and quality assurance team budget.",
+               "Working on digital transformation in the e-commerce sector under high traffic.",
+               "Re-developing monolith projects on new infrastructure.",
+               "Discovering and hiring new talents and managing their performance.",
+               "Managing high-traffic C# and Node.js web projects.",
+               "Developing and transforming Agile Culture."
+            ]
+         },
+         {
+            "position": "Director of Software Development",
             "company": "TurkNet İletişim Hizmetleri",
-            "start": "01/2022",
-            "end": "Present",
+            "start": "12/2021",
+            "end": "08/2024",
             "location": "Istanbul, Turkey",
             "accomplishments": [
                "Leading 3 main domains, 10 software engineering teams, and a test engineering team with ~75 employees, with DevOps and Agile Culture.",
@@ -40,26 +56,10 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Development Manager",
-            "company": "Pubinno Inc.",
-            "start": "08/2021",
-            "end": "01/2022",
-            "location": "Istanbul, Turkey",
-            "accomplishments": [
-               "Hired new talents for the software development team.",
-               "Managed people, resources, and their performances.",
-               "Built Agile culture by using Scrum and Kanban with the all necessary rituals.",
-               "Re-designed all Project management processes on Jira.",
-               "Re-designed CI/CD pipeline.",
-               "Adapted the Agile culture throughout the company.",
-               "Completed the ongoing migration project to the new infrastructure."
-            ]
-         },
-         {
             "position": "Lead Engineer & Coordinator",
             "company": "OmmaWorks",
             "start": "01/2020",
-            "end": "07/2021",
+            "end": "09/2021",
             "location": "Istanbul, Turkey",
             "accomplishments": [
                "Led an Agile / Kanban software teams that organized the maintenance processes of web and digital signage applications.",

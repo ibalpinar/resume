@@ -48,8 +48,12 @@ body {
    padding: 0;
    place-items: center;
    background-color: var(--background_color);
-   font-family: var(--general_font);
+   font-family: var(--general_font), Verdana, sans-serif !important;
    margin: 0 auto;
+}
+
+* {
+   font-family: inherit;
 }
 
 /* Start of default light mode */
