@@ -328,6 +328,8 @@ header {
    padding: 5px 10px 5px 10px;
    white-space: nowrap;
    margin: 3px;
+   -webkit-print-color-adjust: exact;
+   print-color-adjust: exact;
 }
 
 .main .others .education {
@@ -657,5 +659,41 @@ html[theme="dark"] .download_button:hover {
    
    .footer {
       display: none !important;
+   }
+   
+   /* Force background colors and text colors for skills */
+   .main .others .skills .container .skill {
+      background: var(--background_color_skill) !important;
+      color: var(--text_skill) !important;
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+      print-color-adjust: exact !important;
+   }
+   
+   /* For light theme in print */
+   html[theme="light"] .main .others .skills .container .skill {
+      background: #2b343d !important;
+      color: #ffffff !important;
+   }
+   
+   /* For dark theme in print */
+   html[theme="dark"] .main .others .skills .container .skill {
+      background: #9b9b9b !important;
+      color: #212030 !important;
+   }
+   
+   /* Ensure other backgrounds are preserved if needed */
+   .header .box::before,
+   .main .work .container .box::before {
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+      print-color-adjust: exact !important;
+   }
+   
+   /* Force all background colors to print */
+   * {
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+      print-color-adjust: exact !important;
    }
 }
