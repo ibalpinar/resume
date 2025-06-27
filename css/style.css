@@ -2,7 +2,7 @@
    --general_font: Verdana;
 }
 
-[theme="light"] {
+html[theme="light"] {
    --background_color: #acacac;
    --background_color_resume_container: #ffffff;
    --background_color_seperator: #000000;
@@ -20,7 +20,7 @@
    --text_language_level: #9b9b9b;
 }
 
-[theme="dark"] {
+html[theme="dark"] {
    --background_color: #213449;
    --background_color_resume_container: #212030;
    --background_color_seperator: #de7728;
@@ -69,6 +69,7 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   align-items: flex-start;
    padding: 10px 25px 0 0;
    text-align: right;
 }
@@ -298,9 +299,9 @@ header {
 }
 
 .main .work .container .experience .accomplishments ul li div{
-   font-size: 11px;
+   font-size: 12px;
    color: var(--text_general);
-   margin: 4px 0 0 0;
+   margin: 5px 0 0 0;
    padding: 0 0 0 0;
 }
 
@@ -320,13 +321,15 @@ header {
 
 .main .others .skills .container .skill {
    display: flex;
-   font-size: 11px;
+   font-size: 12px;
    border-radius: 6px;
    background: var(--background_color_skill);
    color: var(--text_skill);
    padding: 5px 10px 5px 10px;
    white-space: nowrap;
    margin: 3px;
+   -webkit-print-color-adjust: exact;
+   print-color-adjust: exact;
 }
 
 .main .others .education {
@@ -336,11 +339,11 @@ header {
 
 .main .others .education .title {
    color: var(--text_general);
-   margin: 15px 0 10px 0;
+   margin: 15px 0 15px 0;
 }
 
 .main .others .education .school {
-   margin: 0 0 15px 0;
+   margin: 0 0 20px 0;
 }
 
 .main .others .education .school .name {
@@ -378,7 +381,7 @@ header {
 }
 
 .main .others .languages .container {
-   margin: 0 0 10px 0;
+   margin: 0 0 20px 0;
 }
 
 .main .others .languages .container .name {
@@ -407,7 +410,7 @@ header {
 }
 
 .main .others .courses .container {
-   margin: 0 0 10px 0;
+   margin: 0 0 20px 0;
 }
 
 .main .others .courses .container .name {
@@ -598,3 +601,99 @@ input:checked + label:after {
 	background: linear-gradient(180deg,#777,#3a3a3a);
 }
 /* End of toggle button*/
+
+/* Start of download button */
+.download_button_container {
+   display: flex;
+   align-items: center;
+}
+
+.download_button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 5px;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.3s ease;
+}
+
+.download_button:hover {
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+html[theme="dark"] .download_button:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.download_button .icon_download {
+   width: 20px;
+   height: 20px;
+   fill: var(--icons);
+   transition: fill 0.3s ease;
+}
+
+.download_button:hover .icon_download {
+   fill: var(--text_header_title);
+}
+/* End of download button */
+
+/* Print styles for PDF generation */
+@media print {
+   .menu_container {
+      display: none !important;
+   }
+   
+   .resume_container {
+      box-shadow: none !important;
+      margin: 0 !important;
+   }
+   
+   body {
+      background-color: white !important;
+      margin: 0 !important;
+      padding: 0 !important;
+   }
+   
+   .footer {
+      display: none !important;
+   }
+   
+   /* Force background colors and text colors for skills */
+   .main .others .skills .container .skill {
+      background: var(--background_color_skill) !important;
+      color: var(--text_skill) !important;
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+      print-color-adjust: exact !important;
+   }
+   
+   /* For light theme in print */
+   html[theme="light"] .main .others .skills .container .skill {
+      background: #2b343d !important;
+      color: #ffffff !important;
+   }
+   
+   /* For dark theme in print */
+   html[theme="dark"] .main .others .skills .container .skill {
+      background: #9b9b9b !important;
+      color: #212030 !important;
+   }
+   
+   /* Ensure other backgrounds are preserved if needed */
+   .header .box::before,
+   .main .work .container .box::before {
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+      print-color-adjust: exact !important;
+   }
+   
+   /* Force all background colors to print */
+   * {
+      -webkit-print-color-adjust: exact !important;
+      color-adjust: exact !important;
+      print-color-adjust: exact !important;
+   }
+}

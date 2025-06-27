@@ -17,46 +17,47 @@ export const resume = {
          "objective": "My focus is scalable, high-traffic web and mobile applications. My goal is to manage and grow the technology department.",
          "photograph": "ilker-balpinar-fotograf-kare.jpg",
          "email": "ilker[at]balpinar[dot]com",
-         "mobile": "+90-533-***-****",
+         "mobile": "+**-***-***-****",
          "location": "Kadikoy, Istanbul, Turkey",
          "linkedin": "https://www.linkedin/in/ibalpinar",
          "github": "https://github.com/ibalpinar"
       },
       "workExperience": [
          {
-            "position": "Director of Software Development",
+            "position": "Director of Software Development (.NET)",
             "company": "Ticimax",
             "start": "08/2024",
             "end": "05/2025",
             "location": "Istanbul, Turkey",
             "accomplishments": [
-               "Managing all product squads, software, and quality assurance teams with ~55 employees, with DevOps and Agile Culture.",
-               "Managing software and quality assurance team budget.",
-               "Working on digital transformation in the e-commerce sector under high traffic.",
-               "Re-developing monolith projects on new infrastructure.",
-               "Discovering and hiring new talents and managing their performance.",
-               "Managing high-traffic C# and Node.js web projects.",
-               "Developing and transforming Agile Culture."
+               "Managed all product squads, software, and quality assurance teams with ~55 employees, with DevOps and Agile Culture.",
+               "Managed software and quality assurance team budget.",
+               "Worked on digital transformation in the e-commerce sector under high-traffic.",
+               "Re-developed monolith projects on new infrastructure.",
+               "Discovered and hired new talents and managing their performance.",
+               "Built a new QA team.",
+               "Managed high-traffic C# and Node.js web projects.",
+               "Developed and transformed Agile Culture."
             ]
          },
          {
-            "position": "Director of Software Development",
+            "position": "Director of Software Development  (.NET & Java)",
             "company": "TurkNet İletişim Hizmetleri",
             "start": "12/2021",
             "end": "08/2024",
             "location": "Istanbul, Turkey",
             "accomplishments": [
-               "Leading 3 main domains, 10 software engineering teams, and a test engineering team with ~75 employees, with DevOps and Agile Culture.",
-               "Managing software engineering team budget.",
-               "Actively working on digital transformation in the big telecommunication domain.",
-               "Hiring new talents for the software development and test team.",
-               "Managing people, resources, and their performances.",
-               "Managing Java, C#, and Node.js web projects that meet high traffic.",
-               "Building new Agile Culture."
+               "Led 3 main domains, 10 software engineering teams, and a test engineering team with ~75 employees, with DevOps and Agile Culture.",
+               "Managed software engineering team budget.",
+               "Actively worked on digital transformation in the big telecommunication domain.",
+               "Hired new talents for the software development and test team.",
+               "Managed people, resources, and their performances.",
+               "Managed Java, C#, and Node.js web projects that meet high traffic.",
+               "Built new Agile Culture."
             ]
          },
          {
-            "position": "Lead Engineer & Coordinator",
+            "position": "Lead Engineer & Coordinator (Javascript & Node.js)",
             "company": "OmmaWorks",
             "start": "01/2020",
             "end": "09/2021",
@@ -69,7 +70,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Head of Technology",
+            "position": "Head of Technology (Java & Node.js)",
             "company": "Emlakjet.com",
             "start": "01/2017",
             "end": "01/2020",
@@ -86,7 +87,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Development Manager",
+            "position": "Software Development Manager (PHP & Node.js)",
             "company": "Emlakjet.com",
             "start": "05/2014",
             "end": "01/2017",
@@ -103,7 +104,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Engineering Manager",
+            "position": "Engineering Manager (Java)",
             "company": "Wallit Inc.",
             "start": "07/2013",
             "end": "05/2014",
@@ -116,7 +117,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Engineering Consultant (Remote)",
+            "position": "Software Engineering Consultant (Java)",
             "company": "Wallit Inc.",
             "start": "12/2012",
             "end": "07/2013",
@@ -126,7 +127,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Senior Software Developer & Architect",
+            "position": "Senior Software Developer & Architect (Java)",
             "company": "Kıraça Holding / Department of IT",
             "start": "02/2008",
             "end": "07/2013",
@@ -142,7 +143,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Senior Software Developer",
+            "position": "Senior Software Developer (Java)",
             "company": "Turkcell Superonline",
             "start": "11/2005",
             "end": "02/2008",
@@ -155,7 +156,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Developer",
+            "position": "Software Developer (Java & ASP)",
             "company": "Deltakom / Telcoturk",
             "start": "11/2001",
             "end": "11/2005",
@@ -168,7 +169,7 @@ export const resume = {
             ]
          },
          {
-            "position": "Junior Software Developer",
+            "position": "Junior Software Developer (Java)",
             "company": "Infotrace Computer & Information Services",
             "start": "05/2001",
             "end": "11/2001",
@@ -180,6 +181,9 @@ export const resume = {
          }
       ],
       "skills": [
+         "Development with AI Agents",
+         "Model Context Protocol (MCP)",
+         "LLMs",
          "Effective Hiring",
          "Time Management",
          "People Management",
