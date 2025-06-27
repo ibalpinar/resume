@@ -1,4 +1,3 @@
-
 /**
  * parseUri 1.2.2
  * @ Steven Levithan <stevenlevithan.com>
@@ -39,7 +38,7 @@ parseUri.options = {
 
 export const LIGHT_MODE = "light"
 export const DARK_MODE = "dark"
-const resumeBody = document.body;
+const resumeHtml = document.documentElement;
 
 /**
  * This function sets the theme status. If the application
@@ -49,14 +48,14 @@ const resumeBody = document.body;
 export const setThemeMode = function(mode){
    if(mode == null || mode == undefined || mode.trim() == ""){
       localStorage.setItem("theme", getThemeMode());
-      resumeBody.setAttribute("theme", getThemeMode());
+      resumeHtml.setAttribute("theme", getThemeMode());
       if(getThemeMode() == DARK_MODE){
          const darkModeToggleElement = document.querySelector("#dark_mode_toggle");
          darkModeToggleElement.checked = true;
       }
    }else{
       localStorage.setItem("theme", mode);
-      resumeBody.setAttribute("theme", mode);
+      resumeHtml.setAttribute("theme", mode);
    }
 };
 
@@ -105,6 +104,21 @@ export const mobile = `<svg class="icon_mobile" xmlns="http://www.w3.org/2000/sv
 export const location = `<svg class="icon_location" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:v="https://vecta.io/nano"><path d="M250.671 500c12.566 0 24.351-6.059 31.606-16.253 14.604-20.509 142.613-203.68 142.613-318.36C424.89 74.191 346.729 0 250.671 0S76.452 74.191 76.452 165.387c0 114.68 128.008 297.852 142.611 318.36C226.32 493.941 238.103 500 250.671 500zm-58.073-326.865c0-31.889 26.002-57.75 58.073-57.75 32.1 0 58.072 25.861 58.072 57.75s-25.972 57.634-58.072 57.634c-32.071 0-58.073-25.748-58.073-57.634z"/></svg>`;
 export const linkedin = `<svg class="icon_linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:v="https://vecta.io/nano"><path d="M463.006 0H36.893h-.45C16.455 0 .234 16.071 0 35.993v427.981C.234 483.912 16.455 500 36.443 500h.483 426.03.468c20.005 0 36.259-16.055 36.576-35.993v-.033V36.026C499.683 16.071 483.429 0 463.407 0h-.484.017.066zM148.289 426.08H74.036V187.5h74.253v238.58zm-37.11-271.222c-23.739 0-42.994-19.255-42.994-42.995s19.255-42.978 42.994-42.995c23.724.017 42.979 19.238 42.995 42.978 0 23.741-19.221 43.012-42.961 43.029h-.05l.016-.017zM425.964 426.08h-74.036V310.066c0-27.674-.568-63.267-38.577-63.267-38.611 0-44.496 30.109-44.496 61.233v118.065h-74.036v-238.58h71.119v32.525h.966c13.804-23.256 38.778-38.594 67.335-38.594l3.018.05h-.151c75.02 0 88.891 49.381 88.891 113.647v130.952l-.033-.017z"/></svg>`;
 export const github = `<svg class="icon_github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:v="https://vecta.io/nano"><path d="M12.019.14C2.844.105-2.928 10.016 1.629 17.979a11.92 11.92 0 0 0 6.624 5.403c.595.095.786-.275.786-.596v-2.014c-3.301.714-4.004-1.563-4.004-1.563-.223-.74-.705-1.373-1.359-1.788-1.085-.739.083-.715.083-.715.758.099 1.429.538 1.823 1.193.689 1.225 2.236 1.666 3.469.99a2.57 2.57 0 0 1 .751-1.598c-2.55-.263-5.387-1.287-5.387-5.829-.035-1.189.391-2.347 1.191-3.229a4.26 4.26 0 0 1 .12-3.147s1-.322 3.277 1.192a11.47 11.47 0 0 1 5.959 0C17.24 4.74 18.24 5.086 18.24 5.086c.439.995.483 2.121.119 3.147.8.882 1.227 2.04 1.192 3.229 0 4.554-2.789 5.554-5.446 5.853.579.583.878 1.386.821 2.204v3.267c0 .321.192.703.799.596 8.716-2.865 11.063-14.092 4.224-20.208A11.92 11.92 0 0 0 12.019.14z"/></svg>`;
+
+// Download Icon
+export const download = `<svg class="icon_download" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:v="https://vecta.io/nano"><path d="M12 15.586l-4.293-4.293-1.414 1.414L12 18.414l5.707-5.707-1.414-1.414L12 15.586z"/><path d="M11 2h2v12h-2V2z"/><path d="M4 19h16v2H4v-2z"/></svg>`;
+
+export const downloadButton =
+   `<div class="download_button_container">
+      <button class="download_button" role="button" title="Download as PDF">
+         ${download}
+      </button>
+   </div>`;
+
+// PDF generation function
+export const generatePDF = function() {
+   window.print();
+};
 
 // Interest Icons
 export const photography = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000" xmlns:v="https://vecta.io/nano"><path d="M2.019 7.335h0v11.606c0 .539.443.975.99.975H21a.99.99 0 0 0 .99-.975V7.335c0-.539-.443-.975-.99-.975H3.009a.99.99 0 0 0-.99.975h0zm7.224-2.911l1.248-1.873c.535-.803 1.637-1.395 2.593-1.395h4.377c.964 0 2.053.586 2.593 1.395l1.259 1.888c1.508.153 2.674 1.396 2.674 2.896v11.606c0 1.601-1.342 2.911-2.987 2.911H3.009c-1.657 0-2.987-1.309-2.987-2.911V7.335c0-1.601 1.342-2.911 2.987-2.911h6.233zm2.618 0h6.822l-.443-.664c-.137-.205-.546-.425-.78-.425h-4.377c-.226 0-.648.227-.78.425l-.443.664zm.143 14.161a5.45 5.45 0 0 1-5.447-5.447 5.45 5.45 0 0 1 5.447-5.447 5.45 5.45 0 0 1 5.447 5.447 5.45 5.45 0 0 1-5.447 5.447zm0-2.179a3.27 3.27 0 0 0 3.268-3.268 3.27 3.27 0 0 0-3.268-3.268 3.27 3.27 0 0 0-3.268 3.268 3.27 3.27 0 0 0 3.268 3.268zm-.91-5.156c-.778.389-1.269 1.125-1.269 2.16 0 .451.366.817.817.817s.817-.366.817-.817c0-.394.122-.577.365-.699.173-.086.363-.118.452-.118.451 0 .817-.366.817-.817s-.366-.817-.817-.817c-.32 0-.742.07-1.182.29z"/></svg>`;

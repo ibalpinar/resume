@@ -1,6 +1,8 @@
 import { elementFromHtml } from './utils.js';
 import { backButton } from './utils.js';
 import { toggleButton } from './utils.js';
+import { downloadButton } from './utils.js';
+import { generatePDF } from './utils.js';
 import { referrer } from './utils.js';
 import { LIGHT_MODE } from './utils.js';
 import { DARK_MODE } from './utils.js';
@@ -20,9 +22,20 @@ export const setPageConfiguration = function(pageTitleData, resumeConfiguration)
    backButtonElement.onclick = function(){document.location=referrer};
    menuContainer.insertAdjacentElement("afterbegin", backButtonElement);
 
+   // Create right side container for toggle and download buttons
+   const rightButtonsContainer = document.createElement("div");
+   rightButtonsContainer.style.display = "flex";
+   rightButtonsContainer.style.alignItems = "center";
+   rightButtonsContainer.style.gap = "10px";
+   menuContainer.insertAdjacentElement("beforeend", rightButtonsContainer);
+
    let toggleButtonElement = elementFromHtml(toggleButton);
-   menuContainer.insertAdjacentElement("beforeend", toggleButtonElement);
+   rightButtonsContainer.insertAdjacentElement("beforeend", toggleButtonElement);
    toggleButtonElement.lastElementChild.addEventListener("click", function(){ darkModeToggle();});
+
+   let downloadButtonElement = elementFromHtml(downloadButton);
+   rightButtonsContainer.insertAdjacentElement("beforeend", downloadButtonElement);
+   downloadButtonElement.lastElementChild.addEventListener("click", function(){ generatePDF();});
 
    let year = new Date().getFullYear();
    const footerElement = document.createElement("div");

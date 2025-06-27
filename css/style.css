@@ -2,7 +2,7 @@
    --general_font: Verdana;
 }
 
-[theme="light"] {
+html[theme="light"] {
    --background_color: #acacac;
    --background_color_resume_container: #ffffff;
    --background_color_seperator: #000000;
@@ -20,7 +20,7 @@
    --text_language_level: #9b9b9b;
 }
 
-[theme="dark"] {
+html[theme="dark"] {
    --background_color: #213449;
    --background_color_resume_container: #212030;
    --background_color_seperator: #de7728;
@@ -69,6 +69,7 @@ body {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
+   align-items: flex-start;
    padding: 10px 25px 0 0;
    text-align: right;
 }
@@ -598,3 +599,63 @@ input:checked + label:after {
 	background: linear-gradient(180deg,#777,#3a3a3a);
 }
 /* End of toggle button*/
+
+/* Start of download button */
+.download_button_container {
+   display: flex;
+   align-items: center;
+}
+
+.download_button {
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 5px;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.3s ease;
+}
+
+.download_button:hover {
+   background-color: rgba(0, 0, 0, 0.1);
+}
+
+html[theme="dark"] .download_button:hover {
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.download_button .icon_download {
+   width: 20px;
+   height: 20px;
+   fill: var(--icons);
+   transition: fill 0.3s ease;
+}
+
+.download_button:hover .icon_download {
+   fill: var(--text_header_title);
+}
+/* End of download button */
+
+/* Print styles for PDF generation */
+@media print {
+   .menu_container {
+      display: none !important;
+   }
+   
+   .resume_container {
+      box-shadow: none !important;
+      margin: 0 !important;
+   }
+   
+   body {
+      background-color: white !important;
+      margin: 0 !important;
+      padding: 0 !important;
+   }
+   
+   .footer {
+      display: none !important;
+   }
+}
