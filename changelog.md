@@ -2,6 +2,11 @@
 
 # Changelog
 
+## 1.2.1 (06 Agu 2025)
+* The technologies placed in companies were added as the first item of accomplishments.
+* Back-end technologies written next to positions have been removed.
+* Fixed some wrong CSS behaviour.
+
 ## 1.2.0 (27 Jun 2025)
 * Added Download function.
 * Fixed some appearance issues.
