@@ -1,5 +1,12 @@
 :root {
    --general_font: Verdana;
+   --general_font_size: 14px;
+   --general_full_name_font_size: 30px;
+   --general_title_font_size: 15px;
+   --general_title_font_size: 17px;
+   --general_right_column_font_size: 12px;
+   --general_school_font_size: 13px;
+   --general_footer_font_size: 10px;
 }
 
 html[theme="light"] {
@@ -48,7 +55,7 @@ body {
    padding: 0;
    place-items: center;
    background-color: var(--background_color);
-   font-family: var(--general_font), Verdana, sans-serif !important;
+   font-family: var(--general_font), sans-serif !important;
    margin: 0 auto;
 }
 
@@ -80,7 +87,7 @@ body {
 
 .menu_container .back_button_container a{
    text-decoration: none;
-   font-size: 12px;
+   font-size: var(--general_font_size);
    font-weight: bold;
 }
 
@@ -120,14 +127,16 @@ header {
 
 .box::before {
    display: flex;
-   width: 35px;
-   height: 55px;
-   margin: 25px 10px 0 0;
+   width: 15px;
+   height: 80px;
+   margin: 1px 10px 0 15px;
    content: ' ';
 }
 
 .header .box::before {
    background-color: var(--background_color_box_header);
+   margin: 22px 10px 0 15px;
+   height: 98px;
 }
 
 .main .work .container .box::before {
@@ -144,19 +153,19 @@ header {
 
 .header .left .full_name {
    color: var(--text_general);
-   font-size: 30px;
+   font-size: var(--general_full_name_font_size);
    margin-top: 20px;
 }
 
 .header .left .title {
    color: var(--text_header_title);
-   font-size: 15px;
+   font-size: var(--general_title_font_size);
    margin-top: 1px;
 }
 
 .header .left .objective {
    color: var(--text_general);
-   font-size: 12px;
+   font-size: var(--general_font_size);
    margin-top: 7px;
 }
 
@@ -195,17 +204,16 @@ header {
 .header .right .contact .info {
    color: var(--text_general);
    text-align: right;
-   font-size: 12px;
+   font-size: var(--general_font_size);
    width: 235px;
    height: 30px;
    padding-right: 15px;
 }
 
 .header .right .contact .icon {
-   font-size: 13px;
    width: 25px;
    height: 30px;
-   margin-right: 25px;
+   margin-right: 17px;
 }
 
 .header .right .contact .icon .icon_email {
@@ -272,7 +280,7 @@ header {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   font-size: 12px;
+   font-size: var(--general_font_size);
    font-style: italic;
    color: var(--text_sub_topic);
    margin: 7px 10px 5px 0;
@@ -285,7 +293,7 @@ header {
 }
 
 .main .work .container .experience .accomplishments .title{
-   font-size: 12px;
+   font-size: var(--general_font_size);
    font-style: italic;
    color: var(--text_sub_topic);
    margin: 0 0 0 0;
@@ -299,9 +307,9 @@ header {
 }
 
 .main .work .container .experience .accomplishments ul li div{
-   font-size: 12px;
+   font-size: var(--general_font_size);
    color: var(--text_general);
-   margin: 5px 0 0 0;
+   margin: 10px 0 0 0;
    padding: 0 0 0 0;
 }
 
@@ -321,7 +329,7 @@ header {
 
 .main .others .skills .container .skill {
    display: flex;
-   font-size: 12px;
+   font-size: var(--general_right_column_font_size);
    border-radius: 6px;
    background: var(--background_color_skill);
    color: var(--text_skill);
@@ -349,17 +357,17 @@ header {
 .main .others .education .school .name {
    color: var(--text_general);
    font-weight: bold;
-   font-size: 14px;
+   font-size: var(--general_right_column_font_size);
 }
 
 .main .others .education .school .department {
    color: var(--text_general);
-   font-size: 14px;
+   font-size: var(--general_right_column_font_size);
    margin: 5px 0 0 0;
 }
 
 .main .others .education .school .location {
-   font-size: 12px;
+   font-size: var(--general_right_column_font_size);
    font-style: italic;
    color: var(--text_education_location);
    margin: 3px 0 0 0;
@@ -377,7 +385,7 @@ header {
    color: var(--text_general);
    margin: 15px 0 10px 0;
    font-weight: bold;
-   font-size: 17px;
+   font-size: var(--general_title_font_size);
 }
 
 .main .others .languages .container {
@@ -386,11 +394,11 @@ header {
 
 .main .others .languages .container .name {
    color: var(--text_general);
-   font-size: 13px;
+   font-size: var(--general_right_column_font_size);
 }
 
 .main .others .languages .container .level {
-   font-size: 12px;
+   font-size: var(--general_right_column_font_size);
    font-style: italic;
    color: var(--text_language_level);
    margin: 3px 0 0 0;
@@ -406,7 +414,7 @@ header {
    color: var(--text_general);
    margin: 15px 0 10px 0;
    font-weight: bold;
-   font-size: 17px;
+   font-size: var(--general_title_font_size);
 }
 
 .main .others .courses .container {
@@ -415,11 +423,11 @@ header {
 
 .main .others .courses .container .name {
    color: var(--text_general);
-   font-size: 13px;
+   font-size: var(--general_right_column_font_size);
 }
 
 .main .others .courses .container .company {
-   font-size: 12px;
+   font-size: var(--general_right_column_font_size);
    font-style: italic;
    color: var(--text_course_company);
    margin: 3px 0 0 0;
@@ -453,13 +461,13 @@ header {
 .main .others .interests .container .name {
    color: var(--text_general);
    float: left;
-   font-size: 13px;
+   font-size: var(--general_right_column_font_size);
    margin: 4px 0 0 10px;
 }
 
 .footer{
    color: var(--text_general);
-   font-size: 11px;
+   font-size: var(--general_footer_font_size);
    text-align: center;
    margin-bottom: 5px;
 }
@@ -476,7 +484,7 @@ header {
 
 /* Start of Back Button Style */
 .back_button div{
-   font-size: 12px;
+   font-size: var(--general_font_size);
    float: left;
    border: 0px solid;
    vertical-align: top;
