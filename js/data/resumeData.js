@@ -12,24 +12,25 @@ export const resume = {
 },
    "data":{
       "header": {
-         "fullName": "Ilker Balpinar",
+         "fullName": "İlker Balpinar",
          "title": "Director of Software Development",
          "objective": "My focus is scalable, high-traffic web and mobile applications. My goal is to manage and grow the technology department.",
          "photograph": "ilker-balpinar-fotograf-kare.jpg",
-         "email": "ilker[at]balpinar[dot]com",
-         "mobile": "+**-***-***-****",
+         "email": "ilker@balpinar.com",
+         "mobile": "+90-533-443-9279",
          "location": "Kadikoy, Istanbul, Turkey",
          "linkedin": "https://www.linkedin/in/ibalpinar",
          "github": "https://github.com/ibalpinar"
       },
       "workExperience": [
          {
-            "position": "Director of Software Development (.NET)",
+            "position": "Director of Software Development",
             "company": "Ticimax",
             "start": "08/2024",
             "end": "05/2025",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: .NET, Node.js, Vue.js, Azure, Flutter for mobile, RabbitMQ, Redis, MSSQL, PostgreSQL, MongoDB.",
                "Managed all product squads, software, and quality assurance teams with ~55 employees, with DevOps and Agile Culture.",
                "Managed software and quality assurance team budget.",
                "Worked on digital transformation in the e-commerce sector under high-traffic.",
@@ -41,12 +42,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Director of Software Development  (.NET & Java)",
+            "position": "Director of Software Development",
             "company": "TurkNet İletişim Hizmetleri",
             "start": "12/2021",
             "end": "08/2024",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: Java, .NET, Node.js, React, Swift, Kotlin, RabbitMQ, Kafka, Redis, MSSQL, PostgreSQL, MongoDB.",
                "Led 3 main domains, 10 software engineering teams, and a test engineering team with ~75 employees, with DevOps and Agile Culture.",
                "Managed software engineering team budget.",
                "Actively worked on digital transformation in the big telecommunication domain.",
@@ -57,12 +59,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Lead Engineer & Coordinator (Javascript & Node.js)",
+            "position": "Lead Engineer & Coordinator",
             "company": "OmmaWorks",
             "start": "01/2020",
             "end": "09/2021",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: Javascript, Node.js, RabbitMQ, Redis, PostgreSQL, MongoDB.",
                "Led an Agile / Kanban software teams that organized the maintenance processes of web and digital signage applications.",
                "Led Agile transformation within the organization.",
                "Developed RESTful URL shortening service.",
@@ -70,12 +73,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Head of Technology (Java & Node.js)",
+            "position": "Head of Technology",
             "company": "Emlakjet.com",
             "start": "01/2017",
             "end": "01/2020",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: PHP, Node.js, Java, React and React Native, Objective C, RabbitMQ, Redis, Memcached, MySQL, PostgreSQL, MongoDB.",
                "Led 3 different departments: software development, infrastructure, project management with ~18 employees, with DevOps and Agile Culture.",
                "Managed ~1.5M TL engineering budget per year.",
                "Represented department of Information Technology in Emlakjet.com board.",
@@ -87,12 +91,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Development Manager (PHP & Node.js)",
+            "position": "Software Development Manager",
             "company": "Emlakjet.com",
             "start": "05/2014",
             "end": "01/2017",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: PHP, Node.js, Java, React and React Native, Objective C, RabbitMQ, Redis, Memcached, MySQL, PostgreSQL, MongoDB.",
                "Managed Monolith & MVC PHP web project that meets high traffic.",
                "Virtualized all physical servers on VMware vSphere.",
                "Hired new talents for software development team.",
@@ -104,12 +109,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Engineering Manager (Java)",
+            "position": "Engineering Manager",
             "company": "Wallit Inc.",
             "start": "07/2013",
             "end": "05/2014",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: Java, StackMob (PaaS), MongoDB.",
                "Developed Wallit's back-end RESTful services by using Java and StackMob.",
                "Developed Vid's back-end RESTful services by using Java and StackMob.",
                "Managed people and resources.",
@@ -117,22 +123,24 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Engineering Consultant (Java)",
+            "position": "Software Engineering Consultant",
             "company": "Wallit Inc.",
             "start": "12/2012",
             "end": "07/2013",
             "location": "California, Turkey",
             "accomplishments": [
+               "Technologies: Java, StackMob (PaaS).",
                "Developed Wallit's back-end RESTful services by using Java and StackMob."
             ]
          },
          {
-            "position": "Senior Software Developer & Architect (Java)",
+            "position": "Senior Software Developer & Architect",
             "company": "Kıraça Holding / Department of IT",
             "start": "02/2008",
             "end": "07/2013",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: Java, Javascript, Oracle.",
                "Developed CRM application for Sirena Marine by using Java, Jsp, Servlet, and Oracle.",
                "Worked on AutoTrade project that includes stream capture server, analyzer, filter, and saver that developed by using pure Java.",
                "Developed various web applications for Karsan, Kare Investment, Karland, Kırpart, and Sirena Marine by using Java technologies.",
@@ -143,12 +151,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Senior Software Developer (Java)",
+            "position": "Senior Software Developer",
             "company": "Turkcell Superonline",
             "start": "11/2005",
             "end": "02/2008",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: Java, Javascript, Sybase.",
                "Firstly developed web application for customer, dealer and distributor network by using PowerDynamo and Sybase.",
                "Developed all billing processes for telecom side on Sybase.",
                "Developed online ADSL sales application (with VPOS integration), and portal for dealers, and web application for customer, dealer and distributor network, wap.superonline.com with WML by using Java, Jsp, Servlet, Struts and Sybase.",
@@ -156,12 +165,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Software Developer (Java & ASP)",
+            "position": "Software Developer",
             "company": "Deltakom / Telcoturk",
             "start": "11/2001",
             "end": "11/2005",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: ASP, Java, Javascript, MSSQL, Oracle.",
                "Developed various intranet and web applications by using classical ASP, SQL Server.",
                "Worked on customer loyalty program that includes call center web application works with Interactive Intelligence, and digitized all processes. Designed and developed front-end and backend by using HTML, CSS, Javascript, classical ASP and Oracle. Written technical documentation and user manual.",
                "Designed and developed web applications for Telcoturk's customer, dealer and distributor network by using HTML, CSS, Javascript, classical ASP and SQL Server.",
@@ -169,12 +179,13 @@ export const resume = {
             ]
          },
          {
-            "position": "Junior Software Developer (Java)",
+            "position": "Junior Software Developer",
             "company": "Infotrace Computer & Information Services",
             "start": "05/2001",
             "end": "11/2001",
             "location": "Istanbul, Turkey",
             "accomplishments": [
+               "Technologies: ASP, Java, Javascript, MSSQL.",
                "Developed applet, console and web applications by using Java platform.",
                "Developed the company web site by using classical ASP."
             ]
@@ -309,10 +320,6 @@ export const resume = {
             "iconName": "photography"
          },
          {
-            "name": "Constant Reading",
-            "iconName": "book"
-         },
-         {
             "name": "Chess",
             "iconName": "chess"
          },
@@ -323,10 +330,6 @@ export const resume = {
          {
             "name": "Swimming",
             "iconName": "swimming"
-         },
-         {
-            "name": "Travelling",
-            "iconName": "travelling"
          },
          {
             "name": "Science & Technology",
